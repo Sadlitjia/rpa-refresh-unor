@@ -1,0 +1,3623 @@
+<html class="">
+
+<head>
+    <style data-rc-order="prepend" rc-util-key="@ant-design-icons">
+        .anticon {
+            display: inline-flex;
+            alignItems: center;
+            color: inherit;
+            font-style: normal;
+            line-height: 0;
+            text-align: center;
+            text-transform: none;
+            vertical-align: -0.125em;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .anticon>* {
+            line-height: 1;
+        }
+
+        .anticon svg {
+            display: inline-block;
+        }
+
+        .anticon::before {
+            display: none;
+        }
+
+        .anticon .anticon-icon {
+            display: block;
+        }
+
+        .anticon[tabindex] {
+            cursor: pointer;
+        }
+
+        .anticon-spin::before,
+        .anticon-spin {
+            display: inline-block;
+            -webkit-animation: loadingCircle 1s infinite linear;
+            animation: loadingCircle 1s infinite linear;
+        }
+
+        @-webkit-keyframes loadingCircle {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes loadingCircle {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>SI-ASN INSTANSI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js" defer=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js" defer=""></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.21/i18n/Indonesian-Alternative.json"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.4/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.6.4/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/plug-ins/1.10.21/i18n/Indonesian.json"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-SN3ET00JF7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-SN3ET00JF7');
+    </script>
+    <meta name="next-head-count" content="20">
+    <link rel="preload" href="/_next/static/css/a357ad8aa46b0c1b176d.css" as="style">
+    <link rel="stylesheet" href="/_next/static/css/a357ad8aa46b0c1b176d.css" data-n-g="">
+    <link rel="preload" href="/_next/static/css/cf61797ead7eb87564ef.css" as="style">
+    <link rel="stylesheet" href="/_next/static/css/cf61797ead7eb87564ef.css" data-n-g="">
+    <link rel="preload" href="/_next/static/css/4fc44418e5718d66ce42.css" as="style">
+    <link rel="stylesheet" href="/_next/static/css/4fc44418e5718d66ce42.css" data-n-g="">
+    <link rel="preload" href="/_next/static/css/75f2dfda460800aa1989.css" as="style">
+    <link rel="stylesheet" href="/_next/static/css/75f2dfda460800aa1989.css" data-n-g="">
+    <link rel="preload" href="/_next/static/css/2c54073940a19a2f31a7.css" as="style"><noscript data-n-css=""></noscript>
+    <style data-n-href="/_next/static/css/2c54073940a19a2f31a7.css">
+        .Toastify__toast-container {
+            z-index: 9999;
+            -webkit-transform: translateZ(9999px);
+            position: fixed;
+            padding: 4px;
+            width: 320px;
+            box-sizing: border-box;
+            color: #fff
+        }
+
+        .Toastify__toast-container--top-left {
+            top: 1em;
+            left: 1em
+        }
+
+        .Toastify__toast-container--top-center {
+            top: 1em;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+
+        .Toastify__toast-container--top-right {
+            top: 1em;
+            right: 1em
+        }
+
+        .Toastify__toast-container--bottom-left {
+            bottom: 1em;
+            left: 1em
+        }
+
+        .Toastify__toast-container--bottom-center {
+            bottom: 1em;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+
+        .Toastify__toast-container--bottom-right {
+            bottom: 1em;
+            right: 1em
+        }
+
+        @media only screen and (max-width:480px) {
+            .Toastify__toast-container {
+                width: 100vw;
+                padding: 0;
+                left: 0;
+                margin: 0
+            }
+
+            .Toastify__toast-container--top-center,
+            .Toastify__toast-container--top-left,
+            .Toastify__toast-container--top-right {
+                top: 0;
+                transform: translateX(0)
+            }
+
+            .Toastify__toast-container--bottom-center,
+            .Toastify__toast-container--bottom-left,
+            .Toastify__toast-container--bottom-right {
+                bottom: 0;
+                transform: translateX(0)
+            }
+
+            .Toastify__toast-container--rtl {
+                right: 0;
+                left: auto
+            }
+        }
+
+        .Toastify__toast {
+            position: relative;
+            min-height: 64px;
+            box-sizing: border-box;
+            margin-bottom: 1rem;
+            padding: 8px;
+            border-radius: 1px;
+            box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .1), 0 2px 15px 0 rgba(0, 0, 0, .05);
+            display: flex;
+            justify-content: space-between;
+            max-height: 800px;
+            overflow: hidden;
+            font-family: sans-serif;
+            cursor: pointer;
+            direction: ltr
+        }
+
+        .Toastify__toast--rtl {
+            direction: rtl
+        }
+
+        .Toastify__toast--dark {
+            background: #121212;
+            color: #fff
+        }
+
+        .Toastify__toast--default {
+            background: #fff;
+            color: #aaa
+        }
+
+        .Toastify__toast--info {
+            background: #3498db
+        }
+
+        .Toastify__toast--success {
+            background: #07bc0c
+        }
+
+        .Toastify__toast--warning {
+            background: #f1c40f
+        }
+
+        .Toastify__toast--error {
+            background: #e74c3c
+        }
+
+        .Toastify__toast-body {
+            margin: auto 0;
+            flex: 1 1 auto
+        }
+
+        @media only screen and (max-width:480px) {
+            .Toastify__toast {
+                margin-bottom: 0
+            }
+        }
+
+        .Toastify__close-button {
+            color: #fff;
+            background: transparent;
+            outline: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            opacity: .7;
+            transition: .3s ease;
+            align-self: flex-start
+        }
+
+        .Toastify__close-button--default {
+            color: #000;
+            opacity: .3
+        }
+
+        .Toastify__close-button>svg {
+            fill: currentColor;
+            height: 16px;
+            width: 14px
+        }
+
+        .Toastify__close-button:focus,
+        .Toastify__close-button:hover {
+            opacity: 1
+        }
+
+        @keyframes Toastify__trackProgress {
+            0% {
+                transform: scaleX(1)
+            }
+
+            to {
+                transform: scaleX(0)
+            }
+        }
+
+        .Toastify__progress-bar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            z-index: 9999;
+            opacity: .7;
+            background-color: hsla(0, 0%, 100%, .7);
+            transform-origin: left
+        }
+
+        .Toastify__progress-bar--animated {
+            animation: Toastify__trackProgress linear 1 forwards
+        }
+
+        .Toastify__progress-bar--controlled {
+            transition: transform .2s
+        }
+
+        .Toastify__progress-bar--rtl {
+            right: 0;
+            left: auto;
+            transform-origin: right
+        }
+
+        .Toastify__progress-bar--default {
+            background: linear-gradient(90deg, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55)
+        }
+
+        .Toastify__progress-bar--dark {
+            background: #bb86fc
+        }
+
+        @keyframes Toastify__bounceInRight {
+
+            0%,
+            60%,
+            75%,
+            90%,
+            to {
+                animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+            }
+
+            0% {
+                opacity: 0;
+                transform: translate3d(3000px, 0, 0)
+            }
+
+            60% {
+                opacity: 1;
+                transform: translate3d(-25px, 0, 0)
+            }
+
+            75% {
+                transform: translate3d(10px, 0, 0)
+            }
+
+            90% {
+                transform: translate3d(-5px, 0, 0)
+            }
+
+            to {
+                transform: none
+            }
+        }
+
+        @keyframes Toastify__bounceOutRight {
+            20% {
+                opacity: 1;
+                transform: translate3d(-20px, 0, 0)
+            }
+
+            to {
+                opacity: 0;
+                transform: translate3d(2000px, 0, 0)
+            }
+        }
+
+        @keyframes Toastify__bounceInLeft {
+
+            0%,
+            60%,
+            75%,
+            90%,
+            to {
+                animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+            }
+
+            0% {
+                opacity: 0;
+                transform: translate3d(-3000px, 0, 0)
+            }
+
+            60% {
+                opacity: 1;
+                transform: translate3d(25px, 0, 0)
+            }
+
+            75% {
+                transform: translate3d(-10px, 0, 0)
+            }
+
+            90% {
+                transform: translate3d(5px, 0, 0)
+            }
+
+            to {
+                transform: none
+            }
+        }
+
+        @keyframes Toastify__bounceOutLeft {
+            20% {
+                opacity: 1;
+                transform: translate3d(20px, 0, 0)
+            }
+
+            to {
+                opacity: 0;
+                transform: translate3d(-2000px, 0, 0)
+            }
+        }
+
+        @keyframes Toastify__bounceInUp {
+
+            0%,
+            60%,
+            75%,
+            90%,
+            to {
+                animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+            }
+
+            0% {
+                opacity: 0;
+                transform: translate3d(0, 3000px, 0)
+            }
+
+            60% {
+                opacity: 1;
+                transform: translate3d(0, -20px, 0)
+            }
+
+            75% {
+                transform: translate3d(0, 10px, 0)
+            }
+
+            90% {
+                transform: translate3d(0, -5px, 0)
+            }
+
+            to {
+                transform: translateZ(0)
+            }
+        }
+
+        @keyframes Toastify__bounceOutUp {
+            20% {
+                transform: translate3d(0, -10px, 0)
+            }
+
+            40%,
+            45% {
+                opacity: 1;
+                transform: translate3d(0, 20px, 0)
+            }
+
+            to {
+                opacity: 0;
+                transform: translate3d(0, -2000px, 0)
+            }
+        }
+
+        @keyframes Toastify__bounceInDown {
+
+            0%,
+            60%,
+            75%,
+            90%,
+            to {
+                animation-timing-function: cubic-bezier(.215, .61, .355, 1)
+            }
+
+            0% {
+                opacity: 0;
+                transform: translate3d(0, -3000px, 0)
+            }
+
+            60% {
+                opacity: 1;
+                transform: translate3d(0, 25px, 0)
+            }
+
+            75% {
+                transform: translate3d(0, -10px, 0)
+            }
+
+            90% {
+                transform: translate3d(0, 5px, 0)
+            }
+
+            to {
+                transform: none
+            }
+        }
+
+        @keyframes Toastify__bounceOutDown {
+            20% {
+                transform: translate3d(0, 10px, 0)
+            }
+
+            40%,
+            45% {
+                opacity: 1;
+                transform: translate3d(0, -20px, 0)
+            }
+
+            to {
+                opacity: 0;
+                transform: translate3d(0, 2000px, 0)
+            }
+        }
+
+        .Toastify__bounce-enter--bottom-left,
+        .Toastify__bounce-enter--top-left {
+            animation-name: Toastify__bounceInLeft
+        }
+
+        .Toastify__bounce-enter--bottom-right,
+        .Toastify__bounce-enter--top-right {
+            animation-name: Toastify__bounceInRight
+        }
+
+        .Toastify__bounce-enter--top-center {
+            animation-name: Toastify__bounceInDown
+        }
+
+        .Toastify__bounce-enter--bottom-center {
+            animation-name: Toastify__bounceInUp
+        }
+
+        .Toastify__bounce-exit--bottom-left,
+        .Toastify__bounce-exit--top-left {
+            animation-name: Toastify__bounceOutLeft
+        }
+
+        .Toastify__bounce-exit--bottom-right,
+        .Toastify__bounce-exit--top-right {
+            animation-name: Toastify__bounceOutRight
+        }
+
+        .Toastify__bounce-exit--top-center {
+            animation-name: Toastify__bounceOutUp
+        }
+
+        .Toastify__bounce-exit--bottom-center {
+            animation-name: Toastify__bounceOutDown
+        }
+
+        @keyframes Toastify__zoomIn {
+            0% {
+                opacity: 0;
+                transform: scale3d(.3, .3, .3)
+            }
+
+            50% {
+                opacity: 1
+            }
+        }
+
+        @keyframes Toastify__zoomOut {
+            0% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: 0;
+                transform: scale3d(.3, .3, .3)
+            }
+
+            to {
+                opacity: 0
+            }
+        }
+
+        .Toastify__zoom-enter {
+            animation-name: Toastify__zoomIn
+        }
+
+        .Toastify__zoom-exit {
+            animation-name: Toastify__zoomOut
+        }
+
+        @keyframes Toastify__flipIn {
+            0% {
+                transform: perspective(400px) rotateX(90deg);
+                animation-timing-function: ease-in;
+                opacity: 0
+            }
+
+            40% {
+                transform: perspective(400px) rotateX(-20deg);
+                animation-timing-function: ease-in
+            }
+
+            60% {
+                transform: perspective(400px) rotateX(10deg);
+                opacity: 1
+            }
+
+            80% {
+                transform: perspective(400px) rotateX(-5deg)
+            }
+
+            to {
+                transform: perspective(400px)
+            }
+        }
+
+        @keyframes Toastify__flipOut {
+            0% {
+                transform: perspective(400px)
+            }
+
+            30% {
+                transform: perspective(400px) rotateX(-20deg);
+                opacity: 1
+            }
+
+            to {
+                transform: perspective(400px) rotateX(90deg);
+                opacity: 0
+            }
+        }
+
+        .Toastify__flip-enter {
+            animation-name: Toastify__flipIn
+        }
+
+        .Toastify__flip-exit {
+            animation-name: Toastify__flipOut
+        }
+
+        @keyframes Toastify__slideInRight {
+            0% {
+                transform: translate3d(110%, 0, 0);
+                visibility: visible
+            }
+
+            to {
+                transform: translateZ(0)
+            }
+        }
+
+        @keyframes Toastify__slideInLeft {
+            0% {
+                transform: translate3d(-110%, 0, 0);
+                visibility: visible
+            }
+
+            to {
+                transform: translateZ(0)
+            }
+        }
+
+        @keyframes Toastify__slideInUp {
+            0% {
+                transform: translate3d(0, 110%, 0);
+                visibility: visible
+            }
+
+            to {
+                transform: translateZ(0)
+            }
+        }
+
+        @keyframes Toastify__slideInDown {
+            0% {
+                transform: translate3d(0, -110%, 0);
+                visibility: visible
+            }
+
+            to {
+                transform: translateZ(0)
+            }
+        }
+
+        @keyframes Toastify__slideOutRight {
+            0% {
+                transform: translateZ(0)
+            }
+
+            to {
+                visibility: hidden;
+                transform: translate3d(110%, 0, 0)
+            }
+        }
+
+        @keyframes Toastify__slideOutLeft {
+            0% {
+                transform: translateZ(0)
+            }
+
+            to {
+                visibility: hidden;
+                transform: translate3d(-110%, 0, 0)
+            }
+        }
+
+        @keyframes Toastify__slideOutDown {
+            0% {
+                transform: translateZ(0)
+            }
+
+            to {
+                visibility: hidden;
+                transform: translate3d(0, 500px, 0)
+            }
+        }
+
+        @keyframes Toastify__slideOutUp {
+            0% {
+                transform: translateZ(0)
+            }
+
+            to {
+                visibility: hidden;
+                transform: translate3d(0, -500px, 0)
+            }
+        }
+
+        .Toastify__slide-enter--bottom-left,
+        .Toastify__slide-enter--top-left {
+            animation-name: Toastify__slideInLeft
+        }
+
+        .Toastify__slide-enter--bottom-right,
+        .Toastify__slide-enter--top-right {
+            animation-name: Toastify__slideInRight
+        }
+
+        .Toastify__slide-enter--top-center {
+            animation-name: Toastify__slideInDown
+        }
+
+        .Toastify__slide-enter--bottom-center {
+            animation-name: Toastify__slideInUp
+        }
+
+        .Toastify__slide-exit--bottom-left,
+        .Toastify__slide-exit--top-left {
+            animation-name: Toastify__slideOutLeft
+        }
+
+        .Toastify__slide-exit--bottom-right,
+        .Toastify__slide-exit--top-right {
+            animation-name: Toastify__slideOutRight
+        }
+
+        .Toastify__slide-exit--top-center {
+            animation-name: Toastify__slideOutUp
+        }
+
+        .Toastify__slide-exit--bottom-center {
+            animation-name: Toastify__slideOutDown
+        }
+    </style>
+    <link rel="preload" href="/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js" as="script">
+    <link rel="preload" href="/_next/static/chunks/framework.b319283d2a0b3303667f.js" as="script">
+    <link rel="preload" href="/_next/static/chunks/b7348cd0933554f3d43abb82208d2125ebd2cb6a.1c91d7949993a384c293.js"
+        as="script">
+    <link rel="preload" href="/_next/static/chunks/bcba553eff99e9862de6fac292dd56851c5556ef.098d15633988e039153b.js"
+        as="script">
+    <link rel="preload" href="/_next/static/chunks/main-ad8c6d538c00742332e0.js" as="script">
+    <link rel="preload" href="/_next/static/chunks/eab32846.3be15b012f90100dd0e3.js" as="script">
+    <link rel="preload" href="/_next/static/chunks/588782d1df8dbced581de60b3c665f705a7acb31.befec5643797be3b7f68.js"
+        as="script">
+    <link rel="preload" href="/_next/static/chunks/b18b5b11f899446619a4d68a7caa1d3026c71a31.b00b681a59330e7a235e.js"
+        as="script">
+    <link rel="preload" href="/_next/static/chunks/72cb453b979c3369de2d6b18eeef3d10e45c19d2.b119905d1171cf069079.js"
+        as="script">
+    <link rel="preload" href="/_next/static/chunks/ad39096d51547e830ab1e6f081c66c0b8cb5b425.c9ca6439adf17d802de9.js"
+        as="script">
+    <link rel="preload" href="/_next/static/chunks/a344e210fd4ebb5044581d9b08d0230adc8bfa08_CSS.fabd4e159e3137462207.js"
+        as="script">
+    <link rel="preload" href="/_next/static/chunks/cc615257fc7912fe706c72f2ef74e45bc8fc1d0e_CSS.cd5f7656c0fb467bb4ae.js"
+        as="script">
+    <link rel="preload" href="/_next/static/chunks/pages/_app-9f0d3caf3e3bb957d72e.js" as="script">
+    <link rel="preload" href="/_next/static/chunks/75fc9c18.20d73e8e6f6570e1f8d9.js" as="script">
+    <link rel="preload" href="/_next/static/chunks/0c428ae2.e9767b70b930e222c97a.js" as="script">
+    <link rel="preload" href="/_next/static/chunks/ebea6a39e06ff245928418052421ca2d016d83e4.9980768314a64e1dc58b.js"
+        as="script">
+    <link rel="preload" href="/_next/static/chunks/ce80bd700df339d28917896b276ea2214f0ac5a0.431c78f568ab2adda017.js"
+        as="script">
+    <link rel="preload" href="/_next/static/chunks/4fc99b0d19b30769f51f2d239e44668ec45326dd.372ef86fcd9398f51734.js"
+        as="script">
+    <link rel="preload" href="/_next/static/chunks/b3c96598bc20b7891514352330600d14e1e55048.54127280ba7af33fd4fc.js"
+        as="script">
+    <link rel="preload" href="/_next/static/chunks/e5fe75451452033677d2497f44f1195174d73f33.0b72a058bf59dbfd9ddd.js"
+        as="script">
+    <link rel="preload" href="/_next/static/chunks/4594816ea0fb71a34d0acd8f0241beed480603ba.e3e3c79cdc3092c3e9d3.js"
+        as="script">
+    <link rel="preload" href="/_next/static/chunks/f747284a712a3f3ad31c9eaf30459959201972fe.db27c724a63efc6042d5.js"
+        as="script">
+    <link rel="preload" href="/_next/static/chunks/6648cb3e3317ed22949d0d3fa30249527a22bccb.4a99dd71b8678e0dab7f.js"
+        as="script">
+    <link rel="preload" href="/_next/static/chunks/3d64d9a3a8a60b51d072dba083c81c8cd08fe42c.e1591fabaf2b59e0d907.js"
+        as="script">
+    <link rel="preload" href="/_next/static/chunks/bb437ea8dc12f0d421a435ae6163af471b616991.5d43853bace90c8ad2dc.js"
+        as="script">
+    <link rel="preload" href="/_next/static/chunks/pages/tampilanData/pppk-f278c0bf8672d043be69.js" as="script">
+    <style>
+        .swal2-popup.swal2-toast {
+            flex-direction: column;
+            align-items: stretch;
+            width: auto;
+            padding: 1.25em;
+            overflow-y: hidden;
+            background: #fff;
+            box-shadow: 0 0 .625em #d9d9d9
+        }
+
+        .swal2-popup.swal2-toast .swal2-header {
+            flex-direction: row;
+            padding: 0
+        }
+
+        .swal2-popup.swal2-toast .swal2-title {
+            flex-grow: 1;
+            justify-content: flex-start;
+            margin: 0 .625em;
+            font-size: 1em
+        }
+
+        .swal2-popup.swal2-toast .swal2-loading {
+            justify-content: center
+        }
+
+        .swal2-popup.swal2-toast .swal2-input {
+            height: 2em;
+            margin: .3125em auto;
+            font-size: 1em
+        }
+
+        .swal2-popup.swal2-toast .swal2-validation-message {
+            font-size: 1em
+        }
+
+        .swal2-popup.swal2-toast .swal2-footer {
+            margin: .5em 0 0;
+            padding: .5em 0 0;
+            font-size: .8em
+        }
+
+        .swal2-popup.swal2-toast .swal2-close {
+            position: static;
+            width: .8em;
+            height: .8em;
+            line-height: .8
+        }
+
+        .swal2-popup.swal2-toast .swal2-content {
+            justify-content: flex-start;
+            margin: 0 .625em;
+            padding: 0;
+            font-size: 1em;
+            text-align: initial
+        }
+
+        .swal2-popup.swal2-toast .swal2-html-container {
+            padding: .625em 0 0
+        }
+
+        .swal2-popup.swal2-toast .swal2-html-container:empty {
+            padding: 0
+        }
+
+        .swal2-popup.swal2-toast .swal2-icon {
+            width: 2em;
+            min-width: 2em;
+            height: 2em;
+            margin: 0 .5em 0 0
+        }
+
+        .swal2-popup.swal2-toast .swal2-icon .swal2-icon-content {
+            display: flex;
+            align-items: center;
+            font-size: 1.8em;
+            font-weight: 700
+        }
+
+        @media all and (-ms-high-contrast:none),
+        (-ms-high-contrast:active) {
+            .swal2-popup.swal2-toast .swal2-icon .swal2-icon-content {
+                font-size: .25em
+            }
+        }
+
+        .swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring {
+            width: 2em;
+            height: 2em
+        }
+
+        .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line] {
+            top: .875em;
+            width: 1.375em
+        }
+
+        .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left] {
+            left: .3125em
+        }
+
+        .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right] {
+            right: .3125em
+        }
+
+        .swal2-popup.swal2-toast .swal2-actions {
+            flex: 1;
+            flex-basis: auto !important;
+            align-self: stretch;
+            width: auto;
+            height: 2.2em;
+            height: auto;
+            margin: 0 .3125em;
+            margin-top: .3125em;
+            padding: 0
+        }
+
+        .swal2-popup.swal2-toast .swal2-styled {
+            margin: .125em .3125em;
+            padding: .3125em .625em;
+            font-size: 1em
+        }
+
+        .swal2-popup.swal2-toast .swal2-styled:focus {
+            box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(100, 150, 200, .5)
+        }
+
+        .swal2-popup.swal2-toast .swal2-success {
+            border-color: #a5dc86
+        }
+
+        .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line] {
+            position: absolute;
+            width: 1.6em;
+            height: 3em;
+            transform: rotate(45deg);
+            border-radius: 50%
+        }
+
+        .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left] {
+            top: -.8em;
+            left: -.5em;
+            transform: rotate(-45deg);
+            transform-origin: 2em 2em;
+            border-radius: 4em 0 0 4em
+        }
+
+        .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right] {
+            top: -.25em;
+            left: .9375em;
+            transform-origin: 0 1.5em;
+            border-radius: 0 4em 4em 0
+        }
+
+        .swal2-popup.swal2-toast .swal2-success .swal2-success-ring {
+            width: 2em;
+            height: 2em
+        }
+
+        .swal2-popup.swal2-toast .swal2-success .swal2-success-fix {
+            top: 0;
+            left: .4375em;
+            width: .4375em;
+            height: 2.6875em
+        }
+
+        .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line] {
+            height: .3125em
+        }
+
+        .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip] {
+            top: 1.125em;
+            left: .1875em;
+            width: .75em
+        }
+
+        .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long] {
+            top: .9375em;
+            right: .1875em;
+            width: 1.375em
+        }
+
+        .swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip {
+            -webkit-animation: swal2-toast-animate-success-line-tip .75s;
+            animation: swal2-toast-animate-success-line-tip .75s
+        }
+
+        .swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long {
+            -webkit-animation: swal2-toast-animate-success-line-long .75s;
+            animation: swal2-toast-animate-success-line-long .75s
+        }
+
+        .swal2-popup.swal2-toast.swal2-show {
+            -webkit-animation: swal2-toast-show .5s;
+            animation: swal2-toast-show .5s
+        }
+
+        .swal2-popup.swal2-toast.swal2-hide {
+            -webkit-animation: swal2-toast-hide .1s forwards;
+            animation: swal2-toast-hide .1s forwards
+        }
+
+        .swal2-container {
+            display: flex;
+            position: fixed;
+            z-index: 1060;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: .625em;
+            overflow-x: hidden;
+            transition: background-color .1s;
+            -webkit-overflow-scrolling: touch
+        }
+
+        .swal2-container.swal2-backdrop-show,
+        .swal2-container.swal2-noanimation {
+            background: rgba(0, 0, 0, .4)
+        }
+
+        .swal2-container.swal2-backdrop-hide {
+            background: 0 0 !important
+        }
+
+        .swal2-container.swal2-top {
+            align-items: flex-start
+        }
+
+        .swal2-container.swal2-top-left,
+        .swal2-container.swal2-top-start {
+            align-items: flex-start;
+            justify-content: flex-start
+        }
+
+        .swal2-container.swal2-top-end,
+        .swal2-container.swal2-top-right {
+            align-items: flex-start;
+            justify-content: flex-end
+        }
+
+        .swal2-container.swal2-center {
+            align-items: center
+        }
+
+        .swal2-container.swal2-center-left,
+        .swal2-container.swal2-center-start {
+            align-items: center;
+            justify-content: flex-start
+        }
+
+        .swal2-container.swal2-center-end,
+        .swal2-container.swal2-center-right {
+            align-items: center;
+            justify-content: flex-end
+        }
+
+        .swal2-container.swal2-bottom {
+            align-items: flex-end
+        }
+
+        .swal2-container.swal2-bottom-left,
+        .swal2-container.swal2-bottom-start {
+            align-items: flex-end;
+            justify-content: flex-start
+        }
+
+        .swal2-container.swal2-bottom-end,
+        .swal2-container.swal2-bottom-right {
+            align-items: flex-end;
+            justify-content: flex-end
+        }
+
+        .swal2-container.swal2-bottom-end>:first-child,
+        .swal2-container.swal2-bottom-left>:first-child,
+        .swal2-container.swal2-bottom-right>:first-child,
+        .swal2-container.swal2-bottom-start>:first-child,
+        .swal2-container.swal2-bottom>:first-child {
+            margin-top: auto
+        }
+
+        .swal2-container.swal2-grow-fullscreen>.swal2-modal {
+            display: flex !important;
+            flex: 1;
+            align-self: stretch;
+            justify-content: center
+        }
+
+        .swal2-container.swal2-grow-row>.swal2-modal {
+            display: flex !important;
+            flex: 1;
+            align-content: center;
+            justify-content: center
+        }
+
+        .swal2-container.swal2-grow-column {
+            flex: 1;
+            flex-direction: column
+        }
+
+        .swal2-container.swal2-grow-column.swal2-bottom,
+        .swal2-container.swal2-grow-column.swal2-center,
+        .swal2-container.swal2-grow-column.swal2-top {
+            align-items: center
+        }
+
+        .swal2-container.swal2-grow-column.swal2-bottom-left,
+        .swal2-container.swal2-grow-column.swal2-bottom-start,
+        .swal2-container.swal2-grow-column.swal2-center-left,
+        .swal2-container.swal2-grow-column.swal2-center-start,
+        .swal2-container.swal2-grow-column.swal2-top-left,
+        .swal2-container.swal2-grow-column.swal2-top-start {
+            align-items: flex-start
+        }
+
+        .swal2-container.swal2-grow-column.swal2-bottom-end,
+        .swal2-container.swal2-grow-column.swal2-bottom-right,
+        .swal2-container.swal2-grow-column.swal2-center-end,
+        .swal2-container.swal2-grow-column.swal2-center-right,
+        .swal2-container.swal2-grow-column.swal2-top-end,
+        .swal2-container.swal2-grow-column.swal2-top-right {
+            align-items: flex-end
+        }
+
+        .swal2-container.swal2-grow-column>.swal2-modal {
+            display: flex !important;
+            flex: 1;
+            align-content: center;
+            justify-content: center
+        }
+
+        .swal2-container.swal2-no-transition {
+            transition: none !important
+        }
+
+        .swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal {
+            margin: auto
+        }
+
+        @media all and (-ms-high-contrast:none),
+        (-ms-high-contrast:active) {
+            .swal2-container .swal2-modal {
+                margin: 0 !important
+            }
+        }
+
+        .swal2-popup {
+            display: none;
+            position: relative;
+            box-sizing: border-box;
+            flex-direction: column;
+            justify-content: center;
+            width: 32em;
+            max-width: 100%;
+            padding: 1.25em;
+            border: none;
+            border-radius: 5px;
+            background: #fff;
+            font-family: inherit;
+            font-size: 1rem
+        }
+
+        .swal2-popup:focus {
+            outline: 0
+        }
+
+        .swal2-popup.swal2-loading {
+            overflow-y: hidden
+        }
+
+        .swal2-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 1.8em
+        }
+
+        .swal2-title {
+            position: relative;
+            max-width: 100%;
+            margin: 0 0 .4em;
+            padding: 0;
+            color: #595959;
+            font-size: 1.875em;
+            font-weight: 600;
+            text-align: center;
+            text-transform: none;
+            word-wrap: break-word
+        }
+
+        .swal2-actions {
+            display: flex;
+            z-index: 1;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 1.25em auto 0;
+            padding: 0
+        }
+
+        .swal2-actions:not(.swal2-loading) .swal2-styled[disabled] {
+            opacity: .4
+        }
+
+        .swal2-actions:not(.swal2-loading) .swal2-styled:hover {
+            background-image: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1))
+        }
+
+        .swal2-actions:not(.swal2-loading) .swal2-styled:active {
+            background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2))
+        }
+
+        .swal2-loader {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 2.2em;
+            height: 2.2em;
+            margin: 0 1.875em;
+            -webkit-animation: swal2-rotate-loading 1.5s linear 0s infinite normal;
+            animation: swal2-rotate-loading 1.5s linear 0s infinite normal;
+            border-width: .25em;
+            border-style: solid;
+            border-radius: 100%;
+            border-color: #2778c4 transparent #2778c4 transparent
+        }
+
+        .swal2-styled {
+            margin: .3125em;
+            padding: .625em 1.1em;
+            box-shadow: none;
+            font-weight: 500
+        }
+
+        .swal2-styled:not([disabled]) {
+            cursor: pointer
+        }
+
+        .swal2-styled.swal2-confirm {
+            border: 0;
+            border-radius: .25em;
+            background: initial;
+            background-color: #2778c4;
+            color: #fff;
+            font-size: 1em
+        }
+
+        .swal2-styled.swal2-deny {
+            border: 0;
+            border-radius: .25em;
+            background: initial;
+            background-color: #d14529;
+            color: #fff;
+            font-size: 1em
+        }
+
+        .swal2-styled.swal2-cancel {
+            border: 0;
+            border-radius: .25em;
+            background: initial;
+            background-color: #757575;
+            color: #fff;
+            font-size: 1em
+        }
+
+        .swal2-styled:focus {
+            outline: 0;
+            box-shadow: 0 0 0 3px rgba(100, 150, 200, .5)
+        }
+
+        .swal2-styled::-moz-focus-inner {
+            border: 0
+        }
+
+        .swal2-footer {
+            justify-content: center;
+            margin: 1.25em 0 0;
+            padding: 1em 0 0;
+            border-top: 1px solid #eee;
+            color: #545454;
+            font-size: 1em
+        }
+
+        .swal2-timer-progress-bar-container {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: .25em;
+            overflow: hidden;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px
+        }
+
+        .swal2-timer-progress-bar {
+            width: 100%;
+            height: .25em;
+            background: rgba(0, 0, 0, .2)
+        }
+
+        .swal2-image {
+            max-width: 100%;
+            margin: 1.25em auto
+        }
+
+        .swal2-close {
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            right: 0;
+            align-items: center;
+            justify-content: center;
+            width: 1.2em;
+            height: 1.2em;
+            padding: 0;
+            overflow: hidden;
+            transition: color .1s ease-out;
+            border: none;
+            border-radius: 5px;
+            background: 0 0;
+            color: #ccc;
+            font-family: serif;
+            font-size: 2.5em;
+            line-height: 1.2;
+            cursor: pointer
+        }
+
+        .swal2-close:hover {
+            transform: none;
+            background: 0 0;
+            color: #f27474
+        }
+
+        .swal2-close:focus {
+            outline: 0;
+            box-shadow: inset 0 0 0 3px rgba(100, 150, 200, .5)
+        }
+
+        .swal2-close::-moz-focus-inner {
+            border: 0
+        }
+
+        .swal2-content {
+            z-index: 1;
+            justify-content: center;
+            margin: 0;
+            padding: 0 1.6em;
+            color: #545454;
+            font-size: 1.125em;
+            font-weight: 400;
+            line-height: normal;
+            text-align: center;
+            word-wrap: break-word
+        }
+
+        .swal2-checkbox,
+        .swal2-file,
+        .swal2-input,
+        .swal2-radio,
+        .swal2-select,
+        .swal2-textarea {
+            margin: 1em auto
+        }
+
+        .swal2-file,
+        .swal2-input,
+        .swal2-textarea {
+            box-sizing: border-box;
+            width: 100%;
+            transition: border-color .3s, box-shadow .3s;
+            border: 1px solid #d9d9d9;
+            border-radius: .1875em;
+            background: inherit;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .06);
+            color: inherit;
+            font-size: 1.125em
+        }
+
+        .swal2-file.swal2-inputerror,
+        .swal2-input.swal2-inputerror,
+        .swal2-textarea.swal2-inputerror {
+            border-color: #f27474 !important;
+            box-shadow: 0 0 2px #f27474 !important
+        }
+
+        .swal2-file:focus,
+        .swal2-input:focus,
+        .swal2-textarea:focus {
+            border: 1px solid #b4dbed;
+            outline: 0;
+            box-shadow: 0 0 0 3px rgba(100, 150, 200, .5)
+        }
+
+        .swal2-file::-moz-placeholder,
+        .swal2-input::-moz-placeholder,
+        .swal2-textarea::-moz-placeholder {
+            color: #ccc
+        }
+
+        .swal2-file:-ms-input-placeholder,
+        .swal2-input:-ms-input-placeholder,
+        .swal2-textarea:-ms-input-placeholder {
+            color: #ccc
+        }
+
+        .swal2-file::placeholder,
+        .swal2-input::placeholder,
+        .swal2-textarea::placeholder {
+            color: #ccc
+        }
+
+        .swal2-range {
+            margin: 1em auto;
+            background: #fff
+        }
+
+        .swal2-range input {
+            width: 80%
+        }
+
+        .swal2-range output {
+            width: 20%;
+            color: inherit;
+            font-weight: 600;
+            text-align: center
+        }
+
+        .swal2-range input,
+        .swal2-range output {
+            height: 2.625em;
+            padding: 0;
+            font-size: 1.125em;
+            line-height: 2.625em
+        }
+
+        .swal2-input {
+            height: 2.625em;
+            padding: 0 .75em
+        }
+
+        .swal2-input[type=number] {
+            max-width: 10em
+        }
+
+        .swal2-file {
+            background: inherit;
+            font-size: 1.125em
+        }
+
+        .swal2-textarea {
+            height: 6.75em;
+            padding: .75em
+        }
+
+        .swal2-select {
+            min-width: 50%;
+            max-width: 100%;
+            padding: .375em .625em;
+            background: inherit;
+            color: inherit;
+            font-size: 1.125em
+        }
+
+        .swal2-checkbox,
+        .swal2-radio {
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            color: inherit
+        }
+
+        .swal2-checkbox label,
+        .swal2-radio label {
+            margin: 0 .6em;
+            font-size: 1.125em
+        }
+
+        .swal2-checkbox input,
+        .swal2-radio input {
+            flex-shrink: 0;
+            margin: 0 .4em
+        }
+
+        .swal2-input-label {
+            display: flex;
+            justify-content: center;
+            margin: 1em auto
+        }
+
+        .swal2-validation-message {
+            align-items: center;
+            justify-content: center;
+            margin: 0 -2.7em;
+            padding: .625em;
+            overflow: hidden;
+            background: #f0f0f0;
+            color: #666;
+            font-size: 1em;
+            font-weight: 300
+        }
+
+        .swal2-validation-message::before {
+            content: "!";
+            display: inline-block;
+            width: 1.5em;
+            min-width: 1.5em;
+            height: 1.5em;
+            margin: 0 .625em;
+            border-radius: 50%;
+            background-color: #f27474;
+            color: #fff;
+            font-weight: 600;
+            line-height: 1.5em;
+            text-align: center
+        }
+
+        .swal2-icon {
+            position: relative;
+            box-sizing: content-box;
+            justify-content: center;
+            width: 5em;
+            height: 5em;
+            margin: 1.25em auto 1.875em;
+            border: .25em solid transparent;
+            border-radius: 50%;
+            border-color: #000;
+            font-family: inherit;
+            line-height: 5em;
+            cursor: default;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none
+        }
+
+        .swal2-icon .swal2-icon-content {
+            display: flex;
+            align-items: center;
+            font-size: 3.75em
+        }
+
+        .swal2-icon.swal2-error {
+            border-color: #f27474;
+            color: #f27474
+        }
+
+        .swal2-icon.swal2-error .swal2-x-mark {
+            position: relative;
+            flex-grow: 1
+        }
+
+        .swal2-icon.swal2-error [class^=swal2-x-mark-line] {
+            display: block;
+            position: absolute;
+            top: 2.3125em;
+            width: 2.9375em;
+            height: .3125em;
+            border-radius: .125em;
+            background-color: #f27474
+        }
+
+        .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left] {
+            left: 1.0625em;
+            transform: rotate(45deg)
+        }
+
+        .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right] {
+            right: 1em;
+            transform: rotate(-45deg)
+        }
+
+        .swal2-icon.swal2-error.swal2-icon-show {
+            -webkit-animation: swal2-animate-error-icon .5s;
+            animation: swal2-animate-error-icon .5s
+        }
+
+        .swal2-icon.swal2-error.swal2-icon-show .swal2-x-mark {
+            -webkit-animation: swal2-animate-error-x-mark .5s;
+            animation: swal2-animate-error-x-mark .5s
+        }
+
+        .swal2-icon.swal2-warning {
+            border-color: #facea8;
+            color: #f8bb86
+        }
+
+        .swal2-icon.swal2-info {
+            border-color: #9de0f6;
+            color: #3fc3ee
+        }
+
+        .swal2-icon.swal2-question {
+            border-color: #c9dae1;
+            color: #87adbd
+        }
+
+        .swal2-icon.swal2-success {
+            border-color: #a5dc86;
+            color: #a5dc86
+        }
+
+        .swal2-icon.swal2-success [class^=swal2-success-circular-line] {
+            position: absolute;
+            width: 3.75em;
+            height: 7.5em;
+            transform: rotate(45deg);
+            border-radius: 50%
+        }
+
+        .swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left] {
+            top: -.4375em;
+            left: -2.0635em;
+            transform: rotate(-45deg);
+            transform-origin: 3.75em 3.75em;
+            border-radius: 7.5em 0 0 7.5em
+        }
+
+        .swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right] {
+            top: -.6875em;
+            left: 1.875em;
+            transform: rotate(-45deg);
+            transform-origin: 0 3.75em;
+            border-radius: 0 7.5em 7.5em 0
+        }
+
+        .swal2-icon.swal2-success .swal2-success-ring {
+            position: absolute;
+            z-index: 2;
+            top: -.25em;
+            left: -.25em;
+            box-sizing: content-box;
+            width: 100%;
+            height: 100%;
+            border: .25em solid rgba(165, 220, 134, .3);
+            border-radius: 50%
+        }
+
+        .swal2-icon.swal2-success .swal2-success-fix {
+            position: absolute;
+            z-index: 1;
+            top: .5em;
+            left: 1.625em;
+            width: .4375em;
+            height: 5.625em;
+            transform: rotate(-45deg)
+        }
+
+        .swal2-icon.swal2-success [class^=swal2-success-line] {
+            display: block;
+            position: absolute;
+            z-index: 2;
+            height: .3125em;
+            border-radius: .125em;
+            background-color: #a5dc86
+        }
+
+        .swal2-icon.swal2-success [class^=swal2-success-line][class$=tip] {
+            top: 2.875em;
+            left: .8125em;
+            width: 1.5625em;
+            transform: rotate(45deg)
+        }
+
+        .swal2-icon.swal2-success [class^=swal2-success-line][class$=long] {
+            top: 2.375em;
+            right: .5em;
+            width: 2.9375em;
+            transform: rotate(-45deg)
+        }
+
+        .swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-tip {
+            -webkit-animation: swal2-animate-success-line-tip .75s;
+            animation: swal2-animate-success-line-tip .75s
+        }
+
+        .swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-long {
+            -webkit-animation: swal2-animate-success-line-long .75s;
+            animation: swal2-animate-success-line-long .75s
+        }
+
+        .swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right {
+            -webkit-animation: swal2-rotate-success-circular-line 4.25s ease-in;
+            animation: swal2-rotate-success-circular-line 4.25s ease-in
+        }
+
+        .swal2-progress-steps {
+            flex-wrap: wrap;
+            align-items: center;
+            max-width: 100%;
+            margin: 0 0 1.25em;
+            padding: 0;
+            background: inherit;
+            font-weight: 600
+        }
+
+        .swal2-progress-steps li {
+            display: inline-block;
+            position: relative
+        }
+
+        .swal2-progress-steps .swal2-progress-step {
+            z-index: 20;
+            flex-shrink: 0;
+            width: 2em;
+            height: 2em;
+            border-radius: 2em;
+            background: #2778c4;
+            color: #fff;
+            line-height: 2em;
+            text-align: center
+        }
+
+        .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step {
+            background: #2778c4
+        }
+
+        .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step {
+            background: #add8e6;
+            color: #fff
+        }
+
+        .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line {
+            background: #add8e6
+        }
+
+        .swal2-progress-steps .swal2-progress-step-line {
+            z-index: 10;
+            flex-shrink: 0;
+            width: 2.5em;
+            height: .4em;
+            margin: 0 -1px;
+            background: #2778c4
+        }
+
+        [class^=swal2] {
+            -webkit-tap-highlight-color: transparent
+        }
+
+        .swal2-show {
+            -webkit-animation: swal2-show .3s;
+            animation: swal2-show .3s
+        }
+
+        .swal2-hide {
+            -webkit-animation: swal2-hide .15s forwards;
+            animation: swal2-hide .15s forwards
+        }
+
+        .swal2-noanimation {
+            transition: none
+        }
+
+        .swal2-scrollbar-measure {
+            position: absolute;
+            top: -9999px;
+            width: 50px;
+            height: 50px;
+            overflow: scroll
+        }
+
+        .swal2-rtl .swal2-close {
+            right: auto;
+            left: 0
+        }
+
+        .swal2-rtl .swal2-timer-progress-bar {
+            right: 0;
+            left: auto
+        }
+
+        @supports (-ms-accelerator:true) {
+            .swal2-range input {
+                width: 100% !important
+            }
+
+            .swal2-range output {
+                display: none
+            }
+        }
+
+        @media all and (-ms-high-contrast:none),
+        (-ms-high-contrast:active) {
+            .swal2-range input {
+                width: 100% !important
+            }
+
+            .swal2-range output {
+                display: none
+            }
+        }
+
+        @-webkit-keyframes swal2-toast-show {
+            0% {
+                transform: translateY(-.625em) rotateZ(2deg)
+            }
+
+            33% {
+                transform: translateY(0) rotateZ(-2deg)
+            }
+
+            66% {
+                transform: translateY(.3125em) rotateZ(2deg)
+            }
+
+            100% {
+                transform: translateY(0) rotateZ(0)
+            }
+        }
+
+        @keyframes swal2-toast-show {
+            0% {
+                transform: translateY(-.625em) rotateZ(2deg)
+            }
+
+            33% {
+                transform: translateY(0) rotateZ(-2deg)
+            }
+
+            66% {
+                transform: translateY(.3125em) rotateZ(2deg)
+            }
+
+            100% {
+                transform: translateY(0) rotateZ(0)
+            }
+        }
+
+        @-webkit-keyframes swal2-toast-hide {
+            100% {
+                transform: rotateZ(1deg);
+                opacity: 0
+            }
+        }
+
+        @keyframes swal2-toast-hide {
+            100% {
+                transform: rotateZ(1deg);
+                opacity: 0
+            }
+        }
+
+        @-webkit-keyframes swal2-toast-animate-success-line-tip {
+            0% {
+                top: .5625em;
+                left: .0625em;
+                width: 0
+            }
+
+            54% {
+                top: .125em;
+                left: .125em;
+                width: 0
+            }
+
+            70% {
+                top: .625em;
+                left: -.25em;
+                width: 1.625em
+            }
+
+            84% {
+                top: 1.0625em;
+                left: .75em;
+                width: .5em
+            }
+
+            100% {
+                top: 1.125em;
+                left: .1875em;
+                width: .75em
+            }
+        }
+
+        @keyframes swal2-toast-animate-success-line-tip {
+            0% {
+                top: .5625em;
+                left: .0625em;
+                width: 0
+            }
+
+            54% {
+                top: .125em;
+                left: .125em;
+                width: 0
+            }
+
+            70% {
+                top: .625em;
+                left: -.25em;
+                width: 1.625em
+            }
+
+            84% {
+                top: 1.0625em;
+                left: .75em;
+                width: .5em
+            }
+
+            100% {
+                top: 1.125em;
+                left: .1875em;
+                width: .75em
+            }
+        }
+
+        @-webkit-keyframes swal2-toast-animate-success-line-long {
+            0% {
+                top: 1.625em;
+                right: 1.375em;
+                width: 0
+            }
+
+            65% {
+                top: 1.25em;
+                right: .9375em;
+                width: 0
+            }
+
+            84% {
+                top: .9375em;
+                right: 0;
+                width: 1.125em
+            }
+
+            100% {
+                top: .9375em;
+                right: .1875em;
+                width: 1.375em
+            }
+        }
+
+        @keyframes swal2-toast-animate-success-line-long {
+            0% {
+                top: 1.625em;
+                right: 1.375em;
+                width: 0
+            }
+
+            65% {
+                top: 1.25em;
+                right: .9375em;
+                width: 0
+            }
+
+            84% {
+                top: .9375em;
+                right: 0;
+                width: 1.125em
+            }
+
+            100% {
+                top: .9375em;
+                right: .1875em;
+                width: 1.375em
+            }
+        }
+
+        @-webkit-keyframes swal2-show {
+            0% {
+                transform: scale(.7)
+            }
+
+            45% {
+                transform: scale(1.05)
+            }
+
+            80% {
+                transform: scale(.95)
+            }
+
+            100% {
+                transform: scale(1)
+            }
+        }
+
+        @keyframes swal2-show {
+            0% {
+                transform: scale(.7)
+            }
+
+            45% {
+                transform: scale(1.05)
+            }
+
+            80% {
+                transform: scale(.95)
+            }
+
+            100% {
+                transform: scale(1)
+            }
+        }
+
+        @-webkit-keyframes swal2-hide {
+            0% {
+                transform: scale(1);
+                opacity: 1
+            }
+
+            100% {
+                transform: scale(.5);
+                opacity: 0
+            }
+        }
+
+        @keyframes swal2-hide {
+            0% {
+                transform: scale(1);
+                opacity: 1
+            }
+
+            100% {
+                transform: scale(.5);
+                opacity: 0
+            }
+        }
+
+        @-webkit-keyframes swal2-animate-success-line-tip {
+            0% {
+                top: 1.1875em;
+                left: .0625em;
+                width: 0
+            }
+
+            54% {
+                top: 1.0625em;
+                left: .125em;
+                width: 0
+            }
+
+            70% {
+                top: 2.1875em;
+                left: -.375em;
+                width: 3.125em
+            }
+
+            84% {
+                top: 3em;
+                left: 1.3125em;
+                width: 1.0625em
+            }
+
+            100% {
+                top: 2.8125em;
+                left: .8125em;
+                width: 1.5625em
+            }
+        }
+
+        @keyframes swal2-animate-success-line-tip {
+            0% {
+                top: 1.1875em;
+                left: .0625em;
+                width: 0
+            }
+
+            54% {
+                top: 1.0625em;
+                left: .125em;
+                width: 0
+            }
+
+            70% {
+                top: 2.1875em;
+                left: -.375em;
+                width: 3.125em
+            }
+
+            84% {
+                top: 3em;
+                left: 1.3125em;
+                width: 1.0625em
+            }
+
+            100% {
+                top: 2.8125em;
+                left: .8125em;
+                width: 1.5625em
+            }
+        }
+
+        @-webkit-keyframes swal2-animate-success-line-long {
+            0% {
+                top: 3.375em;
+                right: 2.875em;
+                width: 0
+            }
+
+            65% {
+                top: 3.375em;
+                right: 2.875em;
+                width: 0
+            }
+
+            84% {
+                top: 2.1875em;
+                right: 0;
+                width: 3.4375em
+            }
+
+            100% {
+                top: 2.375em;
+                right: .5em;
+                width: 2.9375em
+            }
+        }
+
+        @keyframes swal2-animate-success-line-long {
+            0% {
+                top: 3.375em;
+                right: 2.875em;
+                width: 0
+            }
+
+            65% {
+                top: 3.375em;
+                right: 2.875em;
+                width: 0
+            }
+
+            84% {
+                top: 2.1875em;
+                right: 0;
+                width: 3.4375em
+            }
+
+            100% {
+                top: 2.375em;
+                right: .5em;
+                width: 2.9375em
+            }
+        }
+
+        @-webkit-keyframes swal2-rotate-success-circular-line {
+            0% {
+                transform: rotate(-45deg)
+            }
+
+            5% {
+                transform: rotate(-45deg)
+            }
+
+            12% {
+                transform: rotate(-405deg)
+            }
+
+            100% {
+                transform: rotate(-405deg)
+            }
+        }
+
+        @keyframes swal2-rotate-success-circular-line {
+            0% {
+                transform: rotate(-45deg)
+            }
+
+            5% {
+                transform: rotate(-45deg)
+            }
+
+            12% {
+                transform: rotate(-405deg)
+            }
+
+            100% {
+                transform: rotate(-405deg)
+            }
+        }
+
+        @-webkit-keyframes swal2-animate-error-x-mark {
+            0% {
+                margin-top: 1.625em;
+                transform: scale(.4);
+                opacity: 0
+            }
+
+            50% {
+                margin-top: 1.625em;
+                transform: scale(.4);
+                opacity: 0
+            }
+
+            80% {
+                margin-top: -.375em;
+                transform: scale(1.15)
+            }
+
+            100% {
+                margin-top: 0;
+                transform: scale(1);
+                opacity: 1
+            }
+        }
+
+        @keyframes swal2-animate-error-x-mark {
+            0% {
+                margin-top: 1.625em;
+                transform: scale(.4);
+                opacity: 0
+            }
+
+            50% {
+                margin-top: 1.625em;
+                transform: scale(.4);
+                opacity: 0
+            }
+
+            80% {
+                margin-top: -.375em;
+                transform: scale(1.15)
+            }
+
+            100% {
+                margin-top: 0;
+                transform: scale(1);
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes swal2-animate-error-icon {
+            0% {
+                transform: rotateX(100deg);
+                opacity: 0
+            }
+
+            100% {
+                transform: rotateX(0);
+                opacity: 1
+            }
+        }
+
+        @keyframes swal2-animate-error-icon {
+            0% {
+                transform: rotateX(100deg);
+                opacity: 0
+            }
+
+            100% {
+                transform: rotateX(0);
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes swal2-rotate-loading {
+            0% {
+                transform: rotate(0)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        @keyframes swal2-rotate-loading {
+            0% {
+                transform: rotate(0)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+            overflow: hidden
+        }
+
+        body.swal2-height-auto {
+            height: auto !important
+        }
+
+        body.swal2-no-backdrop .swal2-container {
+            top: auto;
+            right: auto;
+            bottom: auto;
+            left: auto;
+            max-width: calc(100% - .625em * 2);
+            background-color: transparent !important
+        }
+
+        body.swal2-no-backdrop .swal2-container>.swal2-modal {
+            box-shadow: 0 0 10px rgba(0, 0, 0, .4)
+        }
+
+        body.swal2-no-backdrop .swal2-container.swal2-top {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+
+        body.swal2-no-backdrop .swal2-container.swal2-top-left,
+        body.swal2-no-backdrop .swal2-container.swal2-top-start {
+            top: 0;
+            left: 0
+        }
+
+        body.swal2-no-backdrop .swal2-container.swal2-top-end,
+        body.swal2-no-backdrop .swal2-container.swal2-top-right {
+            top: 0;
+            right: 0
+        }
+
+        body.swal2-no-backdrop .swal2-container.swal2-center {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        body.swal2-no-backdrop .swal2-container.swal2-center-left,
+        body.swal2-no-backdrop .swal2-container.swal2-center-start {
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%)
+        }
+
+        body.swal2-no-backdrop .swal2-container.swal2-center-end,
+        body.swal2-no-backdrop .swal2-container.swal2-center-right {
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%)
+        }
+
+        body.swal2-no-backdrop .swal2-container.swal2-bottom {
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+
+        body.swal2-no-backdrop .swal2-container.swal2-bottom-left,
+        body.swal2-no-backdrop .swal2-container.swal2-bottom-start {
+            bottom: 0;
+            left: 0
+        }
+
+        body.swal2-no-backdrop .swal2-container.swal2-bottom-end,
+        body.swal2-no-backdrop .swal2-container.swal2-bottom-right {
+            right: 0;
+            bottom: 0
+        }
+
+        @media print {
+            body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+                overflow-y: scroll !important
+            }
+
+            body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true] {
+                display: none
+            }
+
+            body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container {
+                position: static !important
+            }
+        }
+
+        body.swal2-toast-shown .swal2-container {
+            background-color: transparent
+        }
+
+        body.swal2-toast-shown .swal2-container.swal2-top {
+            top: 0;
+            right: auto;
+            bottom: auto;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+
+        body.swal2-toast-shown .swal2-container.swal2-top-end,
+        body.swal2-toast-shown .swal2-container.swal2-top-right {
+            top: 0;
+            right: 0;
+            bottom: auto;
+            left: auto
+        }
+
+        body.swal2-toast-shown .swal2-container.swal2-top-left,
+        body.swal2-toast-shown .swal2-container.swal2-top-start {
+            top: 0;
+            right: auto;
+            bottom: auto;
+            left: 0
+        }
+
+        body.swal2-toast-shown .swal2-container.swal2-center-left,
+        body.swal2-toast-shown .swal2-container.swal2-center-start {
+            top: 50%;
+            right: auto;
+            bottom: auto;
+            left: 0;
+            transform: translateY(-50%)
+        }
+
+        body.swal2-toast-shown .swal2-container.swal2-center {
+            top: 50%;
+            right: auto;
+            bottom: auto;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        body.swal2-toast-shown .swal2-container.swal2-center-end,
+        body.swal2-toast-shown .swal2-container.swal2-center-right {
+            top: 50%;
+            right: 0;
+            bottom: auto;
+            left: auto;
+            transform: translateY(-50%)
+        }
+
+        body.swal2-toast-shown .swal2-container.swal2-bottom-left,
+        body.swal2-toast-shown .swal2-container.swal2-bottom-start {
+            top: auto;
+            right: auto;
+            bottom: 0;
+            left: 0
+        }
+
+        body.swal2-toast-shown .swal2-container.swal2-bottom {
+            top: auto;
+            right: auto;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+
+        body.swal2-toast-shown .swal2-container.swal2-bottom-end,
+        body.swal2-toast-shown .swal2-container.swal2-bottom-right {
+            top: auto;
+            right: 0;
+            bottom: 0;
+            left: auto
+        }
+    </style>
+    <link as="script" rel="prefetch" href="/_next/static/chunks/1bfc9850.446cb20028e7e1b5fbbd.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/ebea6a39e06ff245928418052421ca2d016d83e4.9980768314a64e1dc58b.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/ce80bd700df339d28917896b276ea2214f0ac5a0.431c78f568ab2adda017.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/4fc99b0d19b30769f51f2d239e44668ec45326dd.372ef86fcd9398f51734.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/e5fe75451452033677d2497f44f1195174d73f33.0b72a058bf59dbfd9ddd.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/f864e7355bd23f7e17bde8525c2f98007c4709ac.b2ae59c3b89db9cf5600.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/c5d58b7ca61ef9838b81cd6891e57fda5b07ef16.28cbd1ee58d4c9ecc54b.js">
+    <link as="script" rel="prefetch" href="/_next/static/chunks/pages/tampilanData-54129ddb4944dbf5907f.js">
+    <link as="script" rel="prefetch" href="/_next/static/chunks/pages/index-d49da5c1f0c73f49a5bc.js">
+    <style type="text/css">
+        .rfm-marquee-container {
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            width: var(--width);
+            transform: var(--transform);
+        }
+
+        .rfm-marquee-container:hover div {
+            animation-play-state: var(--pause-on-hover);
+        }
+
+        .rfm-marquee-container:active div {
+            animation-play-state: var(--pause-on-click);
+        }
+
+        .rfm-overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .rfm-overlay::before,
+        .rfm-overlay::after {
+            background: linear-gradient(to right, var(--gradient-color), rgba(255, 255, 255, 0));
+            content: "";
+            height: 100%;
+            position: absolute;
+            width: var(--gradient-width);
+            z-index: 2;
+            pointer-events: none;
+            touch-action: none;
+        }
+
+        .rfm-overlay::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+
+        .rfm-overlay::before {
+            left: 0;
+            top: 0;
+        }
+
+        .rfm-marquee {
+            flex: 0 0 auto;
+            min-width: var(--min-width);
+            z-index: 1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+            animation-play-state: var(--play);
+            animation-delay: var(--delay);
+            animation-direction: var(--direction);
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .rfm-initial-child-container {
+            flex: 0 0 auto;
+            display: flex;
+            min-width: auto;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .rfm-child {
+            transform: var(--transform);
+        }
+    </style>
+    <style type="text/css" data-styled-jsx=""></style>
+    <link as="script" rel="prefetch" href="/_next/static/chunks/75fc9c18.20d73e8e6f6570e1f8d9.js">
+    <link as="script" rel="prefetch" href="/_next/static/chunks/0c428ae2.e9767b70b930e222c97a.js">
+    <link as="script" rel="prefetch" href="/_next/static/chunks/6728d85a.a06e5d226b0df7769ece.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/b3c96598bc20b7891514352330600d14e1e55048.54127280ba7af33fd4fc.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/4594816ea0fb71a34d0acd8f0241beed480603ba.e3e3c79cdc3092c3e9d3.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/7c9be97bd23cd4fc04a7303312f2245d90d52ba3.789a84e22d76a2fdc5a5.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/a13408b5e70f7b0956322030031745c32cdddba4.bea897199fd820d2bf4d.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/02943e9e1c0265f13281228d1afdeebf5a903e3e.f5e83e7228ddc36f72ac.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/0fc971a93b7fed0ed378c86184410cc3e2fbfcbe.4e090442ba5dbd71dea9.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/729d38e71ed568cd581fb7b05b86c524bfe22f06.f89090c7f8521fe03a46.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/39a9b1dad1e0b9d7dc0750df01ce03e65f359c35.453b6f456168bb1dd568.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/32cf06d4a1d046b59f4e4114697db851bef80fad.0e0c171664669e82354c.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/86e1c1fbf558fdc3c61a28c7e3ac30cd463cff98.fcf3dd0dc79592760674.js">
+    <link as="script" rel="prefetch" href="/_next/static/chunks/pages/tampilanData/pns-94b131d2902f22d6eca6.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/f747284a712a3f3ad31c9eaf30459959201972fe.db27c724a63efc6042d5.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/6648cb3e3317ed22949d0d3fa30249527a22bccb.4a99dd71b8678e0dab7f.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/3d64d9a3a8a60b51d072dba083c81c8cd08fe42c.e1591fabaf2b59e0d907.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/bb437ea8dc12f0d421a435ae6163af471b616991.5d43853bace90c8ad2dc.js">
+    <link as="script" rel="prefetch" href="/_next/static/chunks/pages/tampilanData/pppk-f278c0bf8672d043be69.js">
+    <link as="script" rel="prefetch"
+        href="/_next/static/chunks/8ebf087db093308720ee5921399ee4d636025534.16fe9468a9b80a91679e.js">
+    <link as="script" rel="prefetch" href="/_next/static/chunks/pages/tampilanData/JPTNonASN-e4d3bc06b3d4bd1c62b6.js">
+</head>
+
+<body class="" style="padding-right: 0px;">
+    <div id="__next">
+        <div>
+            <div id="sidebar-bg" class="sidebar-overlay "></div>
+            <header class="header-modern border-0">
+                <nav class="container-fluid px-3 py-2 navbar navbar-expand-lg navbar-light">
+                    <div class="d-flex align-items-center gap-2"><button
+                            class="btn btn-brand p-2 d-flex align-items-center justify-content-center shadow-sm menuButton"
+                            aria-label="Buka menu"><img src="/img/sidebar-icon-instansi.png" alt="menu" width="18"
+                                height="18"></button><span
+                            class="d-flex align-items-center text-decoration-none navbar-brand"><img
+                                src="/img/siasn-instansi.png" alt="logo" height="40"></span><span
+                            class="ms-2 fw-semibold brand-text fs-6"></span></div><button
+                        aria-controls="basic-navbar-nav" type="button" aria-label="Toggle navigation"
+                        class="border-0 navbar-toggler collapsed"><span class="navbar-toggler-icon"></span></button>
+                    <div class="justify-content-end navbar-collapse collapse" id="basic-navbar-nav">
+                        <div class="align-items-center navbar-nav">
+                            <div class="d-flex align-items-center gap-2 me-2">
+                                <div
+                                    style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;">
+                                    <div style="box-sizing: border-box; display: block; max-width: 100%;"><img alt=""
+                                            aria-hidden="true" role="presentation"
+                                            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                                            style="max-width: 100%; display: block; margin: 0px; border: none; padding: 0px;">
+                                    </div><img alt="profil"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAQAElEQVR4AeydCbhN5RrH/84hQoZkCpUhVKQow00Zu6XMRcbMQwhNNCgpcqUyJCRCHJXxkjFDlAqZHTOZx8zj4XDOPe/q2ffZOXs7e+/zreFb63+eZz17nbW/9X7v+3vXf39rfFdUXQxL5EQG3AYCbwNR4B8JkEBQAhRIUDT8ggQACoRbAQnchAAFchM4/IoETBQI4ZKA/gQoEP1zyAhMJECBmAiXpvUnQIHon0NGYCIBCsREuDStPwE9BaI/d0agCQEKRJNE0U17CFAg9nBnr5oQoEA0SRTdtIcABWIPd/aqCQEK5IZE8V8S8CdAgfjT4DwJ3ECAArkBCP8lAX8CFIg/Dc6TwA0EKJAbgPBfEvAnQIH40zB3ntY1JECBaJg0umwdAQrEOtbsSUMCFIiGSaPL1hGgQKxjzZ40JECBaJi05C5ziVkEKBCzyNKuKwhQIK5II4MwiwAFYhZZ2nUFAQrEFWlkEGYRoEDMIusWux6PgwLx+AbA8G9OgAK5OR9+63ECFIjHNwCGf3MCFMjN+fBbjxOgQDy+AdgZvg59UyA6ZIk+2kaAArENPTvWgQAFokOW6KNtBCgQ29CzYx0IUCA6ZIk+hktAWXsKRBlKGnIjAQrEjVllTMoIUCDKUNKQGwlQIG7MKmNSRoACUYaShtxIILlA3BglYyKBCAlQIBGC42reIECBeCPPjDJCAhRIhOC4mjcIUCDeyDOjjJCApQKJ0EeuRgK2EaBAbEPPjnUgQIHokCX6aBsBzwokR/7MqN7mfrw8thoGrHgeI3c3x6Rz7fHdxQ6YntAZMxKTT1PjXzLaSDtp/9m6F9Bzeg20GVwRFZ4rjFtvS2dbItmxOQQ8JZAn292Pt2Y+g7FHW2HU3hfReXQVVG1ZHEXL5UbuQlmMDTx9xrRIkyYw7Oi0UUYbEYK0L/jQHShfrxBqdiuFHlOfRszZ9og50w6DNjQybItoAlviUl0IuEUgQXmXqJzv7403acPtNKoKytYuiGy5MyIqOogKglpK+QsRVsast+CeB3MYo5OIZnJcRwzb1hQdR1RCkUdzpWikcvNixigVaARz8zL5sUoRjg0NXCsQ+WWXXaf3F9Y2dn9kw7WBL9Klj0a+YtnwVMcS+HhlA4w90grdJ1SHCNcOf9hneARcJ5Ci5XNDRPH65KeMXSfZLQoPiXmtZYTJlicjKjUrhj6L6mDo5sZ49uUHzeuQllNNwFUCaT2oInrPr41S1QvAScIIlKWopF28AvffjrJ1Cgb6msscQsAVApFRQ3an5GDZrl0ph+STbigmoL1A5Bf49e//3p2SXRjFfADQopcJaC2Qaq3vg5yZynnXbV7OIWM3kYC2AhFxNO9fAVlz3WoiHpr2OgEtBVK6xt1o3KcsxeH1rdeC+LUTiFzFrv1qKdyeL7MFeNiF1wloJ5Dn3iqDB564M+jtIFollM46noBWApHTuRUb3Yu0t0QrB5twPRF/7T+P36buxthXl6Nvzdmol+aLf0zvVZuJIS8uwuwhG7B69l4c+/Mc4q9cV+4LDTqHgFYCqdqiOHLdrfaM1ZVL17Bixp/oXX0m2t/9DQY2mI9ZgzZgzZx9ybK0aclBLJ2wHWO6L0e/WnPQsfAENMwwEoOaLjRsnDsRh8TEZKtxgcYEtBHInUWzoUSV/EgTpeYmQ9mQd/1xHO9V+y8G1J+H2KWHIk7jz5N2GDZa5ByDwc0WYvOyw7h2lSNLxEAdtKI2AilXtxBy3qXmwFzEsXHxAUMcO1YcU5oOEUuvyjPw6sOTIfOXz8eHZV9GqCZZRv1j1+7GXb1I/t+4+GBYfgRrfPLQxSRuM5X790Xbn4J1aetybQRSqPQduOXWtEpg7dt0EmO6LUe4G284nR/YcsrY9epZfiqWf78T8XHWjijh+Mq2wQloIxC5sS94GKF/E3cxHovGbIFswKGvFXlL6efTRj+if925+HPtXzxGiRylLWtqIZCSVfMj8+0ZlAA6feQS1s3fr8RWOEbWLdiP18pMxrSPVuPS2avhrMq2NhLQQiA58mVCxiy3KMF04sAFHN5xRomtSIzE9FqJIS0W4cius5GsznUsJqCFQLLnzYTotIrOXiXYfx521cw96HTvRONAV04vW5xzdhcGAS0EkiFzOkRFqxFI9rwZw8DDpgEIeGqRFgJRmZHsSaPRE02KqjRJWy4m4DmBZMqWHlVbFTfK97g4rwxNEQEtBBJ3IR5yr5SKmNMk7amVTLoiLwXj5M5gFTZpw70EtBDI6SMXcf2auoNrOZ4pX78wpDJijU4l3JtdRpZqAnoI5OglyCiS6mj9DMhIkqdwVrQbVgnjjrVGl6+rhlTYzc8EZ5UTcJ5BLQSyY8XRpItrV0yhJ0KRx3artbrPKOw24WQbfLCkLuq/WRqqrt6b4jiNWkJAC4HIPVNyk5zZREQscsW+ZJV8kOfdh8Q2RszZdvhkdUO0H/YE5Iq+2T7QvrMIaCEQQbZn/Ymk45AEmbVsEsHIFfzCZXKiRueS+GBxHUj1d6mIKLVk5dl4y5xhR7YQ0EYgO1Yew+Vz9t/DJNXfZddLXp3Qa05NTDjV1ih1KpXjbckgOzWVgDYC+W3KLuzffMpUGOEalxEmc/b0kFKnUp8r5kw79F5Q23glQri22N5kAhGa10YgEt/aefsd/VyFlD196N8F0GNaDYzY1Qx1XntI3OakMYEonXyfO2wj9sWedLzLMrLIKeQWAx8z3lxFoTg+ZUEd1EogcjZr0ZituHjGnFO+QSlF+IUIRd5EJUKR4tpSlSVCU1zNJgJaCUQYLRgZi1Wz9iq79URsmj2JUOQ1b+/OrYV6PUqb3R3tKySgnUAk9q+6LMOmnw5q9/iqHNA3+bAsOn1VRcLgpAGBUATiuDBkV0uKLmxdflg7kUjRO7lq33V8dcdxpUPJCWgpEAlDiiF81mQh1s3fp9XulvguN0tWbFgETfuVl385OZiAtgIRpicPXsCHz8zGnM83QkYVWabLlC5DNOROYnm5py4+e9FPrQXiS9jXryw3SobqVlZHHt4SkUjVSF8s/HQWAVcIRJD6yuqMf+NXHN19Vptjk/zFs+OpDg9ICJwcSMBmgagnMvPT9XipyETIma79saccf3wSnS4KZZ69BxxF1G8LKiy6TiA+KPOGx6JbyW8hZXWWTdyOM0cvOXZUkZrD5eoW8rnOTwcRcK1AfIxjlx7C4OaL0CrvWPQoNwVyofHQ9jNw0ns9pOZw8cfy+Fzmp4MIuF4g/qx3/XEcI19ahi7FYyCvKhjacjF+nbwLh7adhjzSm6jusXf/bkOaz1c0GyuthETK2kaeEog/Wjkt/NP4bfjkhQXoct8kNL5tlDHCTP1oDbb9dhQXTsVZuksmTzKWqJzP30XOO4CAewUSAVwZYWLeWYG3HpuG5jnGoFuJbzGl72rsWHHMGGEiMBnyKukzpUVOxW/PCrlzNgxKgAIJigbGKxImvbsSPStMRes7x0Lmpfi1GbtiaZPOZmXNxbKoN0mHLV9RICFil10yGU26PjAJ84dvwtXL10JcM7Rm0emikS33raE1ZivLCFAgYaIWoYzq8jO+efN3pc+lyC3xco9WmO6wuckEKJAIAc8ZuhHzR8TyZZ0R8tNlNQokgkz5VlkybhuO7Tnv+5efLiSghUCkDtX0hM4YuKoBnPTYqryp6tD200o2i8SERMTHXVdii0bUEdBCIBKu7KMXeTQXekx5GpWaFZNFjpjO/XVZiR/XryXg/Ck9nrVXErAmRrQRiI9njvyZ0WF4JbQeVNG3yNbP6LRqEF67moDje8/ZGgs7T05ATXaT2zV1ibzXo2a3UnBCpZC892ZTEqucHTtx4IISWzSijoCWApHwZZeraLnc6D2/NtoOfRwiGllu5SS1efMUzqKkS3kHyoaFB5TYohF1BLQViA+BVDN8psuDGLq5Cer3LO1bbMln1ZbFoeLqt1yZ37P+hCU+s5PwCGgvEAlXRpM7CmRGs/4V8NX+FmjQ6xHTR5QXB1RA2doFIX2LD6mZLp+/ii2/HE6NCa5rEgFXCMTHRjZWEUqTD8th9IGW6DH1aZRQfIes7Mq9EvMkanUvBSm84Os7NZ/yiPDv03anxgTXNYmAqwTiz0h2vSo8V9h4W5SMKt0nVIf8798mnHk5e9bi438Zu3KPNy4KqW8VzvrB2l6PT8D6Hw9oV5UlWDxuW+5agfgS5RtV5NqJjCiT4zpi5O7meOeHZ9FmcEVUbl4s2Zuj5HqLLJe6VT2n18Dwnc2Mau1133gYMkKJTZ/91H4e3HYai7/emlozIazPJpEQiIpkJZ3XSZc+GlJQ+pGa90BOFXf7prrx5qgZiZ3hmwYmXbGX5c+/XcZ410feIlkh66mOO+5iPBaO3gK5Iq/aNu2pIeA5gajBlnorcuZqzZx9kJseU2+NFswiQIGYRTYFu/s2ncT3ff5IoRW/tpsABWJDBk4evIAJb/5uPLFoQ/fsMgwCFEgYsFQ0FXEMb78Ua+ftU2HOGTZc7AUFYmFyj+w8A4rDQuAKuqJAFEBMyUTC9URsWHQA/evO48iREiyHfa+FQHauOo5LZ686DF1o7ojf0/+zBu8/OYvHHKEhc1QrLQTyeavFaFtg3P8PbOUX2VEUAzgjD0DJqNHn6VmI6bUyQAsu0oGAFgIRkJfPx2P6gLXo+sC3Rp2qxWO3Qp6fkOsJ8r1TpmtXrxuF5vrVnGOMGlJ0zim+6eiH3T5rIxB/UFIBcVjrJWh313ijXKivILX8avu3s2peRHruRJxR57fPUz8YApb3lVjVP/sxj4CWAvHHIWLxFaTuUHACRnf9Batm7YGcTjVTMFId/sius5BXK/R9drZRDFvq/MYuPeTvnmPm5TUQ9dJ8gdRObfOPw6YlBx0Tl9mOaC8Qf0AiCnlfYf86c5OOWcbj+XQj8F61mZj49gr8PGkHdqw8ZhwoXzh9xbh79sqla5Bff38b/vNSPVF27c4cu4S9G09i9ey9kOLWfWvORsMMI9Hp3omQVyvwmoY/NXfNu0oggVIjv3bT+q/BoKYL0bP8VOMYpvnto9Ekyyg0yvQl6kcF/1V9IeOXRrtWecbilVLfoV+tOZDi1nIPVaC+uMx9BFwvEPeljBEpIhCSGQokJExs5FUCFIhXM8+4QyJAgYSEiY28SoAC8WrmGXdIBCiQkDCxkVcJRCYQr9Ji3J4jQIF4LuUMOBwCFEg4tNjWcwQoEM+lnAGHQ4ACCYcW23qOgOME4rkMMGBHE6BAHJ0eOmc3AQrE7gywf0cToEAcnR46ZzcBCsTuDLB/RxPwkkAcnQg650wCFIgz80KvHEKAAnFIIuiGMwlQIM7MC71yCAEKxCGJoBvOJECBKMkLjbiVAAXi1swyLiUEKBAlGGnErQQoELdmlnEpIUCBKMFII24lQIE4PbP0z1YCFIit+Nm50wlQIE7PEP2zlQAFYit+du50AhSI0zNE/2wlQIHYit/eztl7ygQokJQZnVtZCAAAATlJREFUsYWHCVAgHk4+Q0+ZAAWSMiO28DABCsTDyWfoKROgQFJmxBbhE3DNGhSIa1LJQMwgQIGYQZU2XUOAAnFNKhmIGQQoEDOo0qZrCFAgrkmlVwKxNk4KxFre7E0zAhSIZgmju9YSoECs5c3eNCNAgWiWMLprLQEKxFre7M3JBAL4RoEEgMJFJOAjQIH4SPCTBAIQoEACQOEiEvARoEB8JPhJAgEIUCABoHARCfgIqBKIzx4/ScBVBCgQV6WTwagmQIGoJkp7riJAgbgqnQxGNQEKRDVR2nMVAQ0E4ireDEYzAhSIZgmju9YSoECs5c3eNCNAgWiWMLprLQEKxFre7E0zAt4WiGbJorvWE6BArGfOHjUiQIFolCy6aj0BCsR65uxRIwIUiEbJoqvWE6BATGJOs+4g8D8AAAD//9XLBGgAAAAGSURBVAMAfjFBQx6cXQgAAAAASUVORK5CYII="
+                                        decoding="async" class="rounded-circle border-2 border-brand"
+                                        style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                </div>
+                                <div class="ml-2  dropdown"><button aria-haspopup="true" aria-expanded="false"
+                                        type="button"
+                                        class="fw-semibold text-brand p-2 text-decoration-none dropdown-toggle btn btn-link"
+                                        style="border: 1.5px solid rgb(38, 157, 216); border-radius: 12px; background: rgb(255, 255, 255); color: rgb(38, 157, 216); padding: 6px 16px; box-shadow: rgba(38, 157, 216, 0.07) 0px 2px 8px;">200209182025041001</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div id="mySidebar" class="sidebar-modern " role="dialog" aria-modal="true" aria-labelledby="sidebarTitle">
+                <div class="h-100 d-flex flex-column">
+                    <div class="sidebar-modern-head d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center gap-2"><img src="/img/siasn-instansi.png" alt="SI-ASN"
+                                height="28" class="object-fit-contain"></div><button class="btn" aria-label="Tutup menu"
+                            type="button"><span aria-hidden="true">✖</span></button>
+                    </div>
+                    <div class="sidebar-modern-body">
+                        <div class="bg-transparent accordion">
+                            <div class="border-0 bg-transparent card">
+                                <div class="sidebar-toggle-modern mb-2 rounded-4 shadow-sm  card-header"
+                                    style="border-radius: 16px;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-column flex-grow-1 min-w-0">
+                                            <div class="fw-semibold sidebar-main-label" title="Layanan Admin Template">
+                                                Layanan Admin Template</div>
+                                        </div>
+                                        <div class="ms-2"><span role="img" aria-label="caret-down"
+                                                class="anticon anticon-caret-down chev"><svg viewBox="0 0 1024 1024"
+                                                    focusable="false" data-icon="caret-down" width="1em" height="1em"
+                                                    fill="currentColor" aria-hidden="true">
+                                                    <path
+                                                        d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z">
+                                                    </path>
+                                                </svg></span></div>
+                                    </div>
+                                </div>
+                                <div class="collapse">
+                                    <div class="sidebar-list gap-2 rounded-4 list-group" style="border-radius: 16px;"><a
+                                            class="list-link d-block text-decoration-none"
+                                            href="/layananAdmin/unggahTemplate" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Unggah
+                                                    Template</span></div>
+                                        </a></div>
+                                </div>
+                                <div class="sidebar-toggle-modern mb-2 rounded-4 shadow-sm  card-header"
+                                    style="border-radius: 16px;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-column flex-grow-1 min-w-0">
+                                            <div class="fw-semibold sidebar-main-label"
+                                                title="Layanan Indeks Profesionalitas ASN">Layanan Indeks
+                                                Profesionalitas ASN</div>
+                                        </div>
+                                        <div class="ms-2"><span role="img" aria-label="caret-down"
+                                                class="anticon anticon-caret-down chev"><svg viewBox="0 0 1024 1024"
+                                                    focusable="false" data-icon="caret-down" width="1em" height="1em"
+                                                    fill="currentColor" aria-hidden="true">
+                                                    <path
+                                                        d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z">
+                                                    </path>
+                                                </svg></span></div>
+                                    </div>
+                                </div>
+                                <div class="collapse">
+                                    <div class="sidebar-list gap-2 rounded-4 list-group" style="border-radius: 16px;"><a
+                                            class="list-link d-block text-decoration-none" href="/layananIP/nilaiASN"
+                                            style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Nilai
+                                                    ASN</span></div>
+                                        </a></div>
+                                </div>
+                                <div class="sidebar-toggle-modern mb-2 rounded-4 shadow-sm  card-header"
+                                    style="border-radius: 16px;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-column flex-grow-1 min-w-0">
+                                            <div class="fw-semibold sidebar-main-label"
+                                                title="Layanan Manajemen Talenta">Layanan Manajemen Talenta</div><span
+                                                class="badge-sub badge-rekon" title="Rekon">Rekon</span>
+                                        </div>
+                                        <div class="ms-2"><span role="img" aria-label="caret-down"
+                                                class="anticon anticon-caret-down chev"><svg viewBox="0 0 1024 1024"
+                                                    focusable="false" data-icon="caret-down" width="1em" height="1em"
+                                                    fill="currentColor" aria-hidden="true">
+                                                    <path
+                                                        d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z">
+                                                    </path>
+                                                </svg></span></div>
+                                    </div>
+                                </div>
+                                <div class="collapse">
+                                    <div class="sidebar-list gap-2 rounded-4 list-group" style="border-radius: 16px;"><a
+                                            class="list-link d-block text-decoration-none"
+                                            href="/layananAdmin/rekonPenkomTm" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Rekon Data
+                                                    Manajemen Talenta</span></div>
+                                        </a></div>
+                                </div>
+                                <div class="sidebar-toggle-modern mb-2 rounded-4 shadow-sm  card-header"
+                                    style="border-radius: 16px;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-column flex-grow-1 min-w-0">
+                                            <div class="fw-semibold sidebar-main-label" title="Layanan Pemberhentian">
+                                                Layanan Pemberhentian</div><span class="badge-sub badge-operator"
+                                                title="Operator">Operator</span>
+                                        </div>
+                                        <div class="ms-2"><span role="img" aria-label="caret-down"
+                                                class="anticon anticon-caret-down chev"><svg viewBox="0 0 1024 1024"
+                                                    focusable="false" data-icon="caret-down" width="1em" height="1em"
+                                                    fill="currentColor" aria-hidden="true">
+                                                    <path
+                                                        d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z">
+                                                    </path>
+                                                </svg></span></div>
+                                    </div>
+                                </div>
+                                <div class="collapse">
+                                    <div class="sidebar-list gap-2 rounded-4 list-group" style="border-radius: 16px;"><a
+                                            class="list-link d-block text-decoration-none"
+                                            href="/layananPemberhentian/DPCP" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Unduh
+                                                    Dokumen DPCP</span></div>
+                                        </a><a class="list-link d-block text-decoration-none"
+                                            href="/layananPemberhentian/berkasUsulan" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Input
+                                                    Usul</span></div>
+                                        </a><a class="list-link d-block text-decoration-none"
+                                            href="/layananPemberhentian/monitoringUsulan"
+                                            style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Inbox
+                                                    Usul</span></div>
+                                        </a><a class="list-link d-block text-decoration-none"
+                                            href="/layananPemberhentian/monitoringPenetapan"
+                                            style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Inbox
+                                                    Penetapan</span></div>
+                                        </a><a class="list-link d-block text-decoration-none"
+                                            href="/layananPemberhentian/penetapanSK" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Buat Surat
+                                                    Keputusan</span></div>
+                                        </a><a class="list-link d-block text-decoration-none"
+                                            href="/layananPemberhentian/monitoringSK" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Inbox Surat
+                                                    Keputusan</span></div>
+                                        </a></div>
+                                </div>
+                                <div class="sidebar-toggle-modern mb-2 rounded-4 shadow-sm  card-header"
+                                    style="border-radius: 16px;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-column flex-grow-1 min-w-0">
+                                            <div class="fw-semibold sidebar-main-label" title="Layanan Peremajaan">
+                                                Layanan Peremajaan</div><span class="badge-sub badge-approval"
+                                                title="Approval">Approval</span>
+                                        </div>
+                                        <div class="ms-2"><span role="img" aria-label="caret-down"
+                                                class="anticon anticon-caret-down chev"><svg viewBox="0 0 1024 1024"
+                                                    focusable="false" data-icon="caret-down" width="1em" height="1em"
+                                                    fill="currentColor" aria-hidden="true">
+                                                    <path
+                                                        d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z">
+                                                    </path>
+                                                </svg></span></div>
+                                    </div>
+                                </div>
+                                <div class="collapse">
+                                    <div class="sidebar-list gap-2 rounded-4 list-group" style="border-radius: 16px;"><a
+                                            class="list-link d-block text-decoration-none"
+                                            href="/layananPeremajaan/persetujuanUsulan" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Teken
+                                                    Usul</span></div>
+                                        </a></div>
+                                </div>
+                                <div class="sidebar-toggle-modern mb-2 rounded-4 shadow-sm  card-header"
+                                    style="border-radius: 16px;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-column flex-grow-1 min-w-0">
+                                            <div class="fw-semibold sidebar-main-label" title="Layanan Peremajaan">
+                                                Layanan Peremajaan</div><span class="badge-sub badge-operator"
+                                                title="Operator">Operator</span>
+                                        </div>
+                                        <div class="ms-2"><span role="img" aria-label="caret-down"
+                                                class="anticon anticon-caret-down chev"><svg viewBox="0 0 1024 1024"
+                                                    focusable="false" data-icon="caret-down" width="1em" height="1em"
+                                                    fill="currentColor" aria-hidden="true">
+                                                    <path
+                                                        d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z">
+                                                    </path>
+                                                </svg></span></div>
+                                    </div>
+                                </div>
+                                <div class="collapse">
+                                    <div class="sidebar-list gap-2 rounded-4 list-group" style="border-radius: 16px;"><a
+                                            class="list-link d-block text-decoration-none"
+                                            href="/layananPeremajaan/berkasUsulan" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Input
+                                                    Usul</span></div>
+                                        </a><a class="list-link d-block text-decoration-none"
+                                            href="/layananPeremajaan/inputNonASN" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Input Data
+                                                    Pejabat Non-ASN</span></div>
+                                        </a><a class="list-link d-block text-decoration-none"
+                                            href="/layananPeremajaan/monitoringUsulan" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Inbox
+                                                    Usul</span></div>
+                                        </a></div>
+                                </div>
+                                <div class="sidebar-toggle-modern mb-2 rounded-4 shadow-sm  card-header"
+                                    style="border-radius: 16px;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-column flex-grow-1 min-w-0">
+                                            <div class="fw-semibold sidebar-main-label" title="Layanan Peremajaan">
+                                                Layanan Peremajaan</div><span class="badge-sub badge-rekon"
+                                                title="Rekon">Rekon</span>
+                                        </div>
+                                        <div class="ms-2"><span role="img" aria-label="caret-down"
+                                                class="anticon anticon-caret-down chev"><svg viewBox="0 0 1024 1024"
+                                                    focusable="false" data-icon="caret-down" width="1em" height="1em"
+                                                    fill="currentColor" aria-hidden="true">
+                                                    <path
+                                                        d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z">
+                                                    </path>
+                                                </svg></span></div>
+                                    </div>
+                                </div>
+                                <div class="collapse">
+                                    <div class="sidebar-list gap-2 rounded-4 list-group" style="border-radius: 16px;"><a
+                                            class="list-link d-block text-decoration-none" href="/layananAdmin/rekonSKP"
+                                            style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Rekon
+                                                    Data</span></div>
+                                        </a></div>
+                                </div>
+                                <div class="sidebar-toggle-modern mb-2 rounded-4 shadow-sm  card-header"
+                                    style="border-radius: 16px;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-column flex-grow-1 min-w-0">
+                                            <div class="fw-semibold sidebar-main-label" title="Layanan PG dan PMK">
+                                                Layanan PG dan PMK</div><span class="badge-sub badge-approval"
+                                                title="Approval">Approval</span>
+                                        </div>
+                                        <div class="ms-2"><span role="img" aria-label="caret-down"
+                                                class="anticon anticon-caret-down chev"><svg viewBox="0 0 1024 1024"
+                                                    focusable="false" data-icon="caret-down" width="1em" height="1em"
+                                                    fill="currentColor" aria-hidden="true">
+                                                    <path
+                                                        d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z">
+                                                    </path>
+                                                </svg></span></div>
+                                    </div>
+                                </div>
+                                <div class="collapse">
+                                    <div class="sidebar-list gap-2 rounded-4 list-group" style="border-radius: 16px;"><a
+                                            class="list-link d-block text-decoration-none"
+                                            href="/layananPGPMK/persetujuanUsulanPG" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Teken Usul
+                                                    PG &amp; PMK</span></div>
+                                        </a></div>
+                                </div>
+                                <div class="sidebar-toggle-modern mb-2 rounded-4 shadow-sm  card-header"
+                                    style="border-radius: 16px;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-column flex-grow-1 min-w-0">
+                                            <div class="fw-semibold sidebar-main-label" title="Layanan PG dan PMK">
+                                                Layanan PG dan PMK</div><span class="badge-sub badge-operator"
+                                                title="Operator">Operator</span>
+                                        </div>
+                                        <div class="ms-2"><span role="img" aria-label="caret-down"
+                                                class="anticon anticon-caret-down chev"><svg viewBox="0 0 1024 1024"
+                                                    focusable="false" data-icon="caret-down" width="1em" height="1em"
+                                                    fill="currentColor" aria-hidden="true">
+                                                    <path
+                                                        d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z">
+                                                    </path>
+                                                </svg></span></div>
+                                    </div>
+                                </div>
+                                <div class="collapse">
+                                    <div class="sidebar-list gap-2 rounded-4 list-group" style="border-radius: 16px;"><a
+                                            class="list-link d-block text-decoration-none"
+                                            href="/layananPGPMK/berkasUsulan?step=1" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Input
+                                                    Usul</span></div>
+                                        </a><a class="list-link d-block text-decoration-none"
+                                            href="/layananPeremajaan/monitoringUsulanPG" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Inbox Usul
+                                                    PG &amp; PMK</span></div>
+                                        </a><a class="list-link d-block text-decoration-none"
+                                            href="/layananPeremajaan/penetapanSK" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Buat SK
+                                                    PMK</span></div>
+                                        </a></div>
+                                </div>
+                                <div class="sidebar-toggle-modern mb-2 rounded-4 shadow-sm  card-header"
+                                    style="border-radius: 16px;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-column flex-grow-1 min-w-0">
+                                            <div class="fw-semibold sidebar-main-label" title="Layanan Profile ASN">
+                                                Layanan Profile ASN</div>
+                                        </div>
+                                        <div class="ms-2"><span role="img" aria-label="caret-down"
+                                                class="anticon anticon-caret-down chev"><svg viewBox="0 0 1024 1024"
+                                                    focusable="false" data-icon="caret-down" width="1em" height="1em"
+                                                    fill="currentColor" aria-hidden="true">
+                                                    <path
+                                                        d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z">
+                                                    </path>
+                                                </svg></span></div>
+                                    </div>
+                                </div>
+                                <div class="collapse">
+                                    <div class="sidebar-list gap-2 rounded-4 list-group" style="border-radius: 16px;"><a
+                                            class="list-link d-block text-decoration-none" href="/tampilanData/pns"
+                                            style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Profile
+                                                    Pegawai</span></div>
+                                        </a><a class="list-link d-block text-decoration-none" href="/tampilanData/pppk"
+                                            aria-current="page" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2 active list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Profile
+                                                    PPPK</span></div>
+                                        </a><a class="list-link d-block text-decoration-none"
+                                            href="/tampilanData/JPTNonASN" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Profile
+                                                    Pejabat Non-ASN</span></div>
+                                        </a></div>
+                                </div>
+                                <div class="sidebar-toggle-modern mb-2 rounded-4 shadow-sm  card-header"
+                                    style="border-radius: 16px;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-column flex-grow-1 min-w-0">
+                                            <div class="fw-semibold sidebar-main-label" title="Layanan SKK">Layanan SKK
+                                            </div><span class="badge-sub badge-approval"
+                                                title="Approval">Approval</span>
+                                        </div>
+                                        <div class="ms-2"><span role="img" aria-label="caret-down"
+                                                class="anticon anticon-caret-down chev"><svg viewBox="0 0 1024 1024"
+                                                    focusable="false" data-icon="caret-down" width="1em" height="1em"
+                                                    fill="currentColor" aria-hidden="true">
+                                                    <path
+                                                        d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z">
+                                                    </path>
+                                                </svg></span></div>
+                                    </div>
+                                </div>
+                                <div class="collapse">
+                                    <div class="sidebar-list gap-2 rounded-4 list-group" style="border-radius: 16px;"><a
+                                            class="list-link d-block text-decoration-none"
+                                            href="/layananSKK/monitoringUsulan" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Inbox
+                                                    Usul</span></div>
+                                        </a><a class="list-link d-block text-decoration-none"
+                                            href="/layananSKK/persetujuanUsulan" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Teken
+                                                    Usul</span></div>
+                                        </a><a class="list-link d-block text-decoration-none"
+                                            href="/layananPersetujuan/monitoringPersetujuan"
+                                            style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Inbox Teken
+                                                    Usul</span></div>
+                                        </a></div>
+                                </div>
+                                <div class="sidebar-toggle-modern mb-2 rounded-4 shadow-sm  card-header"
+                                    style="border-radius: 16px;">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex flex-column flex-grow-1 min-w-0">
+                                            <div class="fw-semibold sidebar-main-label" title="Layanan SKK">Layanan SKK
+                                            </div><span class="badge-sub badge-operator"
+                                                title="Operator">Operator</span>
+                                        </div>
+                                        <div class="ms-2"><span role="img" aria-label="caret-down"
+                                                class="anticon anticon-caret-down chev"><svg viewBox="0 0 1024 1024"
+                                                    focusable="false" data-icon="caret-down" width="1em" height="1em"
+                                                    fill="currentColor" aria-hidden="true">
+                                                    <path
+                                                        d="M840.4 300H183.6c-19.7 0-30.7 20.8-18.5 35l328.4 380.8c9.4 10.9 27.5 10.9 37 0L858.9 335c12.2-14.2 1.2-35-18.5-35z">
+                                                    </path>
+                                                </svg></span></div>
+                                    </div>
+                                </div>
+                                <div class="collapse">
+                                    <div class="sidebar-list gap-2 rounded-4 list-group" style="border-radius: 16px;"><a
+                                            class="list-link d-block text-decoration-none"
+                                            href="/layananSKK/berkasUsulan" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Input
+                                                    Usul</span></div>
+                                        </a><a class="list-link d-block text-decoration-none"
+                                            href="/layananSKK/monitoringUsulan" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Inbox
+                                                    Usul</span></div>
+                                        </a><a class="list-link d-block text-decoration-none"
+                                            href="/layananSKK/monitoringPenetapan" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Inbox
+                                                    penetapan</span></div>
+                                        </a><a class="list-link d-block text-decoration-none"
+                                            href="/layananSKK/penetapanSK" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Buat Surat
+                                                    Keputusan</span></div>
+                                        </a><a class="list-link d-block text-decoration-none"
+                                            href="/layananSKK/monitoringSK" style="text-decoration: none;">
+                                            <div class="list-item-modern rounded-4 border-0 px-3 py-2  list-group-item"
+                                                style="border-radius: 12px; cursor: pointer;"><span
+                                                    class="list-text text-truncate" style="font-size: 12px;">Inbox Surat
+                                                    Keputusan</span></div>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="min-height: 100vh;">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent">
+                        <li class="breadcrumb-item"><a href="/">Layanan Tampil Data PPPK</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Profile PPPK</li>
+                    </ol>
+                </nav>
+                <div class="wizard__title">
+                    <h5>Tampilan Profile PPPK</h5>
+                </div>
+                <div class="mb-3 card">
+                    <form class="" data-gtm-form-interact-id="3">
+                        <div class="align-items-center pb-3 row">
+                            <div class="mt-2 ml-1 col-sm-2"><img width="200" height="200"
+                                    src="blob:https://siasn-instansi.bkn.go.id/513b7728-8384-4853-9794-5173c53a462c"
+                                    class=""></div>
+                            <div class="mt-2 ml-10 col-sm-4">
+                                <div class="align-items-center form-row">
+                                    <div class="col-sm-3"><label class="font-view-instansi form-label">NIP BARU
+                                            :</label></div>
+                                    <div class="col-sm-7"><input required="" placeholder="Masukan NIP Baru" type="text"
+                                            class="form-control" data-gtm-form-interact-field-id="3"></div>
+                                    <div class="my-1 col-sm-2"></div>
+                                </div>
+                                <div class="align-items-center form-row">
+                                    <div class="col-sm-3"><label class="font-view-instansi form-label">NIP LAMA
+                                            :</label></div>
+                                    <div class="col-sm-7"><input placeholder="Masukan NIP Lama" type="text"
+                                            class="form-control"></div>
+                                    <div class="my-1 col-sm-2"><button type="submit" class="btn btn-light"><img
+                                                src="/img/magnify-scan.png" width="20" height="20" class=""></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 col-sm-5">
+                                <div class="mt-3 row"><label class="font-view-instansi form-label" sm="12">
+                                        <h3><b>RIYONO</b></h3>
+                                    </label></div>
+                                <div class="row"><label class="font-view-instansi form-label" sm="12">
+                                        <p>
+                                            <dt class="text-truncate"><b>Instansi :</b></dt>
+                                            <dd> Kementerian Komunikasi dan Digital</dd>
+                                        </p>
+                                    </label></div>
+                                <div class="row"><label class="font-view-instansi form-label" sm="12">
+                                        <p>
+                                            <dt class="text-truncate"><b>Unit Kerja :</b></dt>
+                                            <dd><b>DIREKTORAT STANDARDISASI PERANGKAT POS DAN INFORMATIKA</b></dd>
+                                        </p>
+                                    </label></div>
+                            </div>
+                            <div class="col-sm-1"></div>
+                        </div>
+                    </form>
+                    <div class="align-items-center pb-3 row">
+                        <div class="col-md-4"><button type="button" class="btn btn-btn btn-info">Cetak Profil</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3 form-row">
+                    <div class="col">
+                        <nav class="tab-content-view mr-1 nav nav-tabs" role="tablist"><a href="#" role="tab"
+                                data-rb-event-key="DataUtama" aria-selected="true" class="nav-item nav-link active">Data
+                                Utama</a><a href="#" role="tab" data-rb-event-key="DataRiwayat" aria-selected="false"
+                                class="nav-item nav-link">Data Riwayat</a></nav>
+                        <div class="tab-content">
+                            <div role="tabpanel" aria-hidden="false" class="fade tab-content-view tab-pane active show">
+                                <div class="jsx-1006227136">
+                                    <div class="jsx-1006227136 wizard__choiceComponent">
+                                        <div class="jsx-1006227136 wizard__choiceRow padd">
+                                            <ul class="jsx-1006227136">
+                                                <li><input type="checkbox" name="1" id="Data Pribadi"><label
+                                                        for="Data Pribadi"><img
+                                                            src="/img/hijau-icon/00-DATA PRIBADI.png"
+                                                            alt="Data Pribadi">
+                                                        <p>Data Pribadi</p>
+                                                    </label></li>
+                                                <li><input type="checkbox" name="2" id="Posisi &amp; Jabatan"
+                                                        checked=""><label for="Posisi &amp; Jabatan"><img
+                                                            src="/img/hijau-icon/00-POSISI JABATN.png"
+                                                            alt="Posisi &amp; Jabatan">
+                                                        <p>Posisi &amp; Jabatan</p>
+                                                    </label></li>
+                                                <li><input type="checkbox" name="3" id="Data Lainnya"><label
+                                                        for="Data Lainnya"><img src="/img/hijau-icon/00-DATALAINNYA.png"
+                                                            alt="Data Lainnya">
+                                                        <p>Data Lainnya</p>
+                                                    </label></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card asn-card ">
+                                        <div class="card-header">
+                                            <h3>Posisi dan Jabatan</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <form class="">
+                                                <div class="form-row">
+                                                    <div class="col-sm-6">
+                                                        <div class="card asn-card ">
+                                                            <div class="card-header">
+                                                                <h3>Instansi Induk</h3>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="form-group form-group-siasn"><label
+                                                                        class="">Nama Instansi</label>
+                                                                    <div
+                                                                        class="input-group siasn-input-group  disabled ">
+                                                                        <input type="text" class="form-control "
+                                                                            placeholder="-" disabled=""
+                                                                            value="Kementerian Komunikasi dan Digital">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group form-group-siasn"><label
+                                                                        class="">Satuan kerja Induk</label>
+                                                                    <div
+                                                                        class="input-group siasn-input-group  disabled ">
+                                                                        <input type="text" class="form-control "
+                                                                            placeholder="-" disabled=""
+                                                                            value="Kementerian Komunikasi dan Digital">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group form-group-siasn"><label
+                                                                        class="">Kanreg</label>
+                                                                    <div class="form-row">
+                                                                        <div class="mb-4 mb-md-0 col-sm-3 col-5">
+                                                                            <div
+                                                                                class="input-group siasn-input-group  disabled ">
+                                                                                <input type="text" class="form-control "
+                                                                                    placeholder="-" disabled=""
+                                                                                    value="00"></div>
+                                                                        </div>
+                                                                        <div class="col-sm-9">
+                                                                            <div
+                                                                                class="input-group siasn-input-group  disabled ">
+                                                                                <input type="text" class="form-control "
+                                                                                    placeholder="-" disabled=""
+                                                                                    value="Pusat"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="card asn-card ">
+                                                            <div class="card-header">
+                                                                <h3>Instansi Kerja</h3>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <div class="form-group form-group-siasn"><label
+                                                                        class="">Nama Instansi</label>
+                                                                    <div
+                                                                        class="input-group siasn-input-group  disabled ">
+                                                                        <input type="text" class="form-control "
+                                                                            placeholder="-" disabled=""
+                                                                            value="Kementerian Komunikasi dan Digital">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="form-group form-group-siasn"><label
+                                                                            class="">Satuan Kerja</label>
+                                                                        <div
+                                                                            class="input-group siasn-input-group  disabled ">
+                                                                            <input type="text" class="form-control "
+                                                                                placeholder="-" disabled=""
+                                                                                value="Kementerian Komunikasi dan Digital">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="form-group form-group-siasn"><label
+                                                                            class="">Kanreg</label>
+                                                                        <div class="form-row">
+                                                                            <div class="mb-4 mb-md-0 col-sm-3 col-5">
+                                                                                <div
+                                                                                    class="input-group siasn-input-group  disabled ">
+                                                                                    <input type="text"
+                                                                                        class="form-control "
+                                                                                        placeholder="-" disabled=""
+                                                                                        value="00"></div>
+                                                                            </div>
+                                                                            <div class="col-sm-9">
+                                                                                <div
+                                                                                    class="input-group siasn-input-group  disabled ">
+                                                                                    <input type="text"
+                                                                                        class="form-control "
+                                                                                        placeholder="-" disabled=""
+                                                                                        value="Pusat"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col">
+                                                        <div class="form-row">
+                                                            <div class="col-md-6 col-12">
+                                                                <div class="form-group form-group-siasn"><label
+                                                                        class="">Unit Organisasi</label><textarea
+                                                                        rows="3" disabled="" type="text"
+                                                                        class="textarea-fix form-control">DIREKTORAT STANDARDISASI PERANGKAT POS DAN INFORMATIKA</textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-12">
+                                                                <div class="form-group form-group-siasn"><label
+                                                                        class="">Unit Organisasi Induk</label><textarea
+                                                                        rows="3" disabled="" type="text"
+                                                                        class="textarea-fix form-control">DIREKTORAT JENDERAL SUMBER DAYA DAN PERANGKAT POS DAN INFORMATIKA</textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 col-12">
+                                                                <div class="form-group form-group-siasn"><label
+                                                                        class="">ID Unor</label>
+                                                                    <div
+                                                                        class="input-group siasn-input-group  disabled ">
+                                                                        <input type="text" class="form-control "
+                                                                            placeholder="-" disabled=""
+                                                                            value="A8ACA73A0BA83912E040640A040269BB">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-md-6 col-12">
+                                                        <div class="form-group form-group-siasn"><label class="">Jenis
+                                                                Jabatan</label>
+                                                            <div class="input-group siasn-input-group  disabled "><input
+                                                                    type="text" class="form-control " placeholder="-"
+                                                                    disabled="" value="Jabatan Pelaksana"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-12">
+                                                        <div class="form-group form-group-siasn"><label
+                                                                class="">Eselon</label>
+                                                            <div class="input-group siasn-input-group  disabled "><input
+                                                                    type="text" class="form-control " placeholder="-"
+                                                                    disabled="" value="-"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-md-6 col-12">
+                                                        <div class="form-group form-group-siasn"><label
+                                                                class="">Jabatan</label>
+                                                            <div class="input-group siasn-input-group  disabled "><input
+                                                                    type="text" class="form-control " placeholder="-"
+                                                                    disabled="" value="OPERATOR LAYANAN OPERASIONAL">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-12">
+                                                        <div class="form-group form-group-siasn"><label
+                                                                class="">TMT</label>
+                                                            <div class="input-group siasn-input-group  disabled "><input
+                                                                    type="text" class="form-control " placeholder="-"
+                                                                    disabled="" value="1 Februari 2024"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-md-6 col-12">
+                                                        <div class="form-group form-group-siasn"><label class="">Tanggal
+                                                                Awal Kontrak</label>
+                                                            <div class="input-group siasn-input-group  disabled "><input
+                                                                    type="text" class="form-control " placeholder="-"
+                                                                    disabled="" value="1 Februari 2024"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-12">
+                                                        <div class="form-group form-group-siasn"><label class="">Tanggal
+                                                                Akhir Kontrak</label>
+                                                            <div class="input-group siasn-input-group  disabled "><input
+                                                                    type="text" class="form-control " placeholder="-"
+                                                                    disabled="" value="31 Juli 2028"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col">
+                                                        <div class="form-group form-group-siasn"><label class="">Lokasi
+                                                                Kerja</label>
+                                                            <div class="input-group siasn-input-group  disabled "><input
+                                                                    type="text" class="form-control " placeholder="-"
+                                                                    disabled="" value="JAKARTA"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-md-4 col-12">
+                                                        <div class="form-group form-group-siasn"><label
+                                                                class="">Golongan Ruang Awal</label>
+                                                            <div class="input-group siasn-input-group  disabled "><input
+                                                                    type="text" class="form-control " placeholder="-"
+                                                                    disabled="" value="V"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-12">
+                                                        <div class="form-group form-group-siasn"><label
+                                                                class="">Golongan Ruang Terakhir</label>
+                                                            <div class="input-group siasn-input-group  disabled "><input
+                                                                    type="text" class="form-control " placeholder="-"
+                                                                    disabled="" value="V"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-12">
+                                                        <div class="form-group form-group-siasn"><label class="">TMT
+                                                                Golongan</label>
+                                                            <div class="input-group siasn-input-group  disabled "><input
+                                                                    type="text" class="form-control " placeholder="-"
+                                                                    disabled="" value="1 Februari 2024"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-md-6 col-12">
+                                                        <div class="form-group form-group-siasn"><label class="">Gaji
+                                                                Pokok</label>
+                                                            <div
+                                                                class="input-group siasn-input-group  has-left-content  disabled ">
+                                                                <div class="input-group-prepend"><span
+                                                                        class="input-group-text">Rp</span></div><input
+                                                                    type="text" class="form-control " placeholder="-"
+                                                                    disabled="" value="2.966.500">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-12">
+                                                        <div class="form-group form-group-siasn"><label class="">Masa
+                                                                Kerja (Tahun/Bulan)</label>
+                                                            <div class="form-row">
+                                                                <div class="mb-4 mb-md-0 col-md-6 col-12">
+                                                                    <div
+                                                                        class="input-group siasn-input-group  disabled ">
+                                                                        <input type="text" class="form-control "
+                                                                            placeholder="-" disabled="" value="0"></div>
+                                                                </div>
+                                                                <div class="col-md-6 col-12">
+                                                                    <div
+                                                                        class="input-group siasn-input-group  disabled ">
+                                                                        <input type="text" class="form-control "
+                                                                            placeholder="-" disabled="" value="0"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-md-6 col-12">
+                                                        <div class="form-group form-group-siasn"><label class="">No
+                                                                SPMT</label>
+                                                            <div class="input-group siasn-input-group  disabled "><input
+                                                                    type="text" class="form-control " placeholder="-"
+                                                                    disabled="" value="-"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 col-12">
+                                                        <div class="form-group form-group-siasn"><label class="">Tanggal
+                                                                SPMT</label>
+                                                            <div class="input-group siasn-input-group  disabled "><input
+                                                                    type="text" class="form-control " placeholder="-"
+                                                                    disabled="" value="-"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="col-md-6 col-12">
+                                                        <div class="form-group form-group-siasn"><label
+                                                                class="">KPPN</label>
+                                                            <div class="input-group siasn-input-group  disabled "><input
+                                                                    type="text" class="form-control " placeholder="-"
+                                                                    disabled="" value="JAKARTA-I"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3 col-12">
+                                                        <div data-show="true" class="ant-alert ant-alert-info"
+                                                            role="alert"><span role="img" aria-label="info-circle"
+                                                                class="anticon anticon-info-circle ant-alert-icon"><svg
+                                                                    viewBox="64 64 896 896" focusable="false"
+                                                                    data-icon="info-circle" width="1em" height="1em"
+                                                                    fill="currentColor" aria-hidden="true">
+                                                                    <path
+                                                                        d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm32 664c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V456c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272zm-32-344a48.01 48.01 0 010-96 48.01 48.01 0 010 96z">
+                                                                    </path>
+                                                                </svg></span>
+                                                            <div class="ant-alert-content">
+                                                                <div class="ant-alert-message">Lakukan Refresh Data Unor
+                                                                    Jika Belum Sesuai</div>
+                                                            </div>
+                                                        </div><button type="button"
+                                                            class="mb-3 btn btn-outline-primary btn-sm"
+                                                            style="width: 100%;"><svg stroke="currentColor"
+                                                                fill="currentColor" stroke-width="0" viewBox="0 0 16 16"
+                                                                height="1em" width="1em"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z">
+                                                                </path>
+                                                                <path
+                                                                    d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z">
+                                                                </path>
+                                                            </svg> Refresh Data Unor</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" aria-hidden="true" class="fade tab-content-view tab-pane">
+                                <div class="jsx-1006227136 mb-3">
+                                    <div class="jsx-1006227136 wizard__choiceComponent">
+                                        <div class="jsx-1006227136 wizard__choiceRow padd">
+                                            <ul class="jsx-1006227136">
+                                                <li><input type="checkbox" name="0" id="Pendidikan"><label
+                                                        for="Pendidikan"><img src="/img/hijau-icon/02-PENDIDIKAN.png"
+                                                            alt="Pendidikan">
+                                                        <p>Pendidikan</p>
+                                                    </label></li>
+                                                <li><input type="checkbox" name="2" id="Unit Organisasi"><label
+                                                        for="Unit Organisasi"><img
+                                                            src="/img/hijau-icon/20-ORGANISASI.png"
+                                                            alt="Unit Organisasi">
+                                                        <p>Unit Organisasi</p>
+                                                    </label></li>
+                                                <li><input type="checkbox" name="3" id="Diklat"><label for="Diklat"><img
+                                                            src="/icon-bkn/diklat.png" alt="Diklat">
+                                                        <p>Diklat</p>
+                                                    </label></li>
+                                                <li><input type="checkbox" name="4" id="Kinerja"><label
+                                                        for="Kinerja"><img src="/icon-bkn/skp.png" alt="Kinerja">
+                                                        <p>Kinerja</p>
+                                                    </label></li>
+                                            </ul>
+                                        </div>
+                                        <div class="jsx-1006227136 wizard__choiceRow">
+                                            <ul class="jsx-1006227136">
+                                                <li><input type="checkbox" name="5" id="Pasangan"><label
+                                                        for="Pasangan"><img src="/icon-bkn/pasangan.png" alt="Pasangan">
+                                                        <p>Pasangan</p>
+                                                    </label></li>
+                                                <li><input type="checkbox" name="6" id="Sertifikasi"><label
+                                                        for="Sertifikasi"><img src="/icon-bkn/diklat.png"
+                                                            alt="Sertifikasi">
+                                                        <p>Sertifikasi</p>
+                                                    </label></li>
+                                                <li><input type="checkbox" name="7" id="Anak"><label for="Anak"><img
+                                                            src="/icon-bkn/anak.png" alt="Anak">
+                                                        <p>Anak</p>
+                                                    </label></li>
+                                                <li><input type="checkbox" name="8" id="Penghargaan"><label
+                                                        for="Penghargaan"><img src="/icon-bkn/penghargaan.png"
+                                                            alt="Penghargaan">
+                                                        <p>Penghargaan</p>
+                                                    </label></li>
+                                            </ul>
+                                        </div>
+                                        <div class="jsx-1006227136 wizard__choiceRow">
+                                            <ul class="jsx-1006227136">
+                                                <li><input type="checkbox" name="9" id="Huk. Disiplin"><label
+                                                        for="Huk. Disiplin"><img src="/icon-bkn/huk-disiplin.png"
+                                                            alt="Huk. Disiplin">
+                                                        <p>Huk. Disiplin</p>
+                                                    </label></li>
+                                                <li><input type="checkbox" name="10" id="Kontrak"><label
+                                                        for="Kontrak"><img src="/icon-bkn/cpns-pns.png" alt="Kontrak">
+                                                        <p>Kontrak</p>
+                                                    </label></li>
+                                                <li><input type="checkbox" name="11" id="Kenaikan Gaji Berkala"><label
+                                                        for="Kenaikan Gaji Berkala"><img src="/icon-bkn/kgb.png"
+                                                            alt="Kenaikan Gaji Berkala">
+                                                        <p>Kenaikan Gaji Berkala</p>
+                                                    </label></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="jsx-1006227136"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <footer
+                    style="background: rgb(38, 157, 216); text-align: center; color: white; font-weight: 700; font-size: 1rem; height: 70px; display: flex; justify-content: center; align-items: center;">
+                    <p style="margin: 0px;">© 2020-2026 | Badan Kepegawaian Negara (BKN)</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script id="__NEXT_DATA__"
+        type="application/json">{"props":{"initialProps":{"cookies":{"_ga":"GA1.1.846481264.1767604043","_ga_D3VMVHCY1Y":"GS2.1.s1767604043$o1$g1$t1767604073$j30$l0$h0","token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJBUWNPM0V3MVBmQV9MQ0FtY2J6YnRLUEhtcWhLS1dRbnZ1VDl0RUs3akc4In0.eyJleHAiOjE3Njc2NDcyNzYsImlhdCI6MTc2NzYwNDA4MSwiYXV0aF90aW1lIjoxNzY3NjA0MDc2LCJqdGkiOiJhY2NlNTNkNS0xZTg2LTRhNzgtOTEzNy0wMDFhYmVkODY4YmUiLCJpc3MiOiJodHRwczovL3Nzby1zaWFzbi5ia24uZ28uaWQvYXV0aC9yZWFsbXMvcHVibGljLXNpYXNuIiwic3ViIjoiYzRiNmJmOTMtZGQ1YS00M2NlLTk4OTUtY2M1YTc2ZWZlYjk3IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoic2lhc24taW5zdGFuc2kiLCJzZXNzaW9uX3N0YXRlIjoiZjdkMzlmYTUtZGQ3Yy00MjNlLWJjMTktZTVlYzUyOWY4MzZjIiwiYWNyIjoiMCIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovL3NpYXNuLWluc3RhbnNpLmJrbi5nby5pZCIsImh0dHA6Ly9zaWFzbi1pbnN0YW5zaS5ia24uZ28uaWQiLCJodHRwOi8vbG9jYWxob3N0OjMwMDAiXSwic2NvcGUiOiJlbWFpbCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiU0FETEkgRkFSRElBTlNZQUggVEpJQSIsInByZWZlcnJlZF91c2VybmFtZSI6IjIwMDIwOTE4MjAyNTA0MTAwMSIsImdpdmVuX25hbWUiOiJTQURMSSIsImZhbWlseV9uYW1lIjoiRkFSRElBTlNZQUggVEpJQSIsImVtYWlsIjoiYWdpbHRqaWExOEBnbWFpbC5jb20ifQ.Knx-MDzl-Db3LIYsRjWKfqexhJiFZTOIAB26zBzX6dfiM9s_cPIJknO7kMW5H5_YuTBLa1e3sg-bLPx8FDdwGxbFuyrnBqYlQHEeNV0AKHPufRGCQCv42J6DYZsdK8euSoIu_SfhSvfNYhfWF6iEa7Jq89LAMQwvIU1-jrG39goYqTPdcltpfb5EFCumIynave33FPk3OUI0YFwwRWjPoCwrB8Kjm2wjgvnPG7nCssW7eYramF4qELEs_AUMcUgxgeoThioXUv7ijfyLs6G7xJGRSva06ukzdmHcDXNTmJ18Hg6XgxgSOKiOqRSacuhtaRi7jsiDIi2NE3ITmYdxXw","refresh_token":"eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIyMDA0ZDBmMy1mNjI5LTRjYTQtYWZiMC1kNGRkYzhlMTU2ZjUifQ.eyJleHAiOjE3Njc2MDU4ODEsImlhdCI6MTc2NzYwNDA4MSwianRpIjoiY2UwMTkzNGMtMDQ1MS00Y2Q1LTgyM2EtZTlhMGU1NDk1MGRkIiwiaXNzIjoiaHR0cHM6Ly9zc28tc2lhc24uYmtuLmdvLmlkL2F1dGgvcmVhbG1zL3B1YmxpYy1zaWFzbiIsImF1ZCI6Imh0dHBzOi8vc3NvLXNpYXNuLmJrbi5nby5pZC9hdXRoL3JlYWxtcy9wdWJsaWMtc2lhc24iLCJzdWIiOiJjNGI2YmY5My1kZDVhLTQzY2UtOTg5NS1jYzVhNzZlZmViOTciLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoic2lhc24taW5zdGFuc2kiLCJzZXNzaW9uX3N0YXRlIjoiZjdkMzlmYTUtZGQ3Yy00MjNlLWJjMTktZTVlYzUyOWY4MzZjIiwic2NvcGUiOiJlbWFpbCBwcm9maWxlIn0.3L3byiR59WBxp0oczVJY0e8FfZSjl0EGNhNQ8YmnzhE","token_expiry":"1767647269059","refresh_token_expiry":"1767605874059","username":"200209182025041001","userfullname":"SADLI FARDIANSYAH TJIA","email":"agiltjia18@gmail.com","_ga_SN3ET00JF7":"GS2.1.s1767604074$o1$g1$t1767604445$j60$l0$h0"}},"initialState":{"dokumenKP":{"dokumen":[],"isLoading":false},"getAtasanNip":{"isLoading":false,"data":{}},"allRefState":{"isLoadingPegawai":false,"isLoadingRiwayat":false,"isLoadingJabatan":false,"isLoadingUnor":false,"isLoadingInstansi":false,"isLoadingSatuanKerja":false,"isLoadingPendidikan":false,"isLoadingProfesi":false,"isLoadingSearchJabatan":false,"isLoadingSearchLokasi":false,"isLoadingJabatanFungsional":false,"isLoadingLokasi":false,"isLoadingGapok":false,"isLoadingAgama":false,"isLoadingKanreg":false,"isLoadingEselon":false,"isLoadingGolongan":false,"isLoadingKPKN":false,"isLoadingKTUA":false,"isLoadingTaspen":false,"isLoadinglistUnorVerifikatorAPI":false,"isSearchTingkatPendidikan":false,"jenisPegawai":[],"jenisRiwayat":[],"jenisJabatan":[],"unor":[],"instansi":[],"satuanKerja":[],"pendidikan":[],"profesi":[],"searchJabatan":[],"searchLokasi":[],"searchTingkatPendidikan":[],"jabatanFungsional":[],"getLokasi":[],"getMutasi":[],"getGapok":[],"getAgama":[],"getKanreg":[],"getEselon":[],"getGolongan":[],"getJabatanFungsional":[],"getKPKN":[],"getKTUA":[],"getTaspen":[],"getlistUnorVerifikatorAPI":[]},"newUsulanPendidikanRed":{"isLoading":false,"err":"","data":[]},"stateStep1":{"isLoadingPeriode":false,"isLoadingJenisPros":false,"isLoadingJenisKp":false,"isLoadingJenisJabatan":false,"periode":{},"jenisPros":[],"jenisKp":[],"jenisJabatan":[],"errPeriode":false},"post":{"posts":[],"post":{},"loading":false,"error":null},"wizards":{"allProcedure":[{"id":0,"src":"/img/hijau-icon/01-GOLONGAN.png","name":"Golongan/KP","isCheck":false,"isDisabled":false,"to":"bkn","dispatch":"golongan"},{"id":1,"src":"/img/hijau-icon/02-PENDIDIKAN.png","name":"Pendidikan","isCheck":false,"isDisabled":false,"to":"bkn","dispatch":"pendidikan"},{"id":3,"src":"/img/hijau-icon/03-PMK.png","name":"PMK","isCheck":false,"isDisabled":false,"to":"bkn","dispatch":"pmk"},{"id":5,"src":"/img/hijau-icon/04-P-INSTANSI.png","name":"P. Instansi","isCheck":false,"isDisabled":false,"to":"bkn","dispatch":"pindahInstansi"},{"id":6,"src":"/img/hijau-icon/05-PROFESI.png","name":"Profesi","isCheck":false,"isDisabled":true,"to":"bkn","dispatch":"profesi"},{"id":7,"src":"/icon-bkn-grey/kedudukanhukum-grey.png","name":"Kedudukan Hukum","isCheck":false,"isDisabled":true,"to":"bkn","dispatch":"kedudukanHukum"},{"id":8,"src":"/img/hijau-icon/14-CTLN.png","name":"CLTN","isCheck":false,"isDisabled":false,"to":"bkn","dispatch":"cltn"},{"id":9,"src":"/icon-bkn/jabatan.png","name":"Jabatan","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"jabatan"},{"id":10,"src":"/icon-bkn/diklat.png","name":"Diklat","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"diklat"},{"id":11,"src":"/icon-bkn/angka-kredit.png","name":"Angka Kredit","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"angkakredit"},{"id":12,"src":"/icon-bkn/huk-disiplin.png","name":"Huk. Disiplin","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"hukDisiplin"},{"id":13,"src":"/icon-bkn/data-pribadi.png","name":"Data Pribadi","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"dataPribadi"},{"id":14,"src":"/icon-bkn/cpns-pns.png","name":"CPNS/PNS","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"cpns"},{"id":15,"src":"/icon-bkn/skp.png","name":"SKP","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"skp"},{"id":16,"src":"/icon-bkn/orangtua.png","name":"Orang Tua","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"orangtua"},{"id":17,"src":"/icon-bkn/pasangan.png","name":"Pasangan","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"pasangan"},{"id":18,"src":"/icon-bkn/anak.png","name":"Anak","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"anak"},{"id":19,"src":"/icon-bkn/penghargaan.png","name":"Penghargaan","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"penghargaan"},{"id":20,"src":"/icon-bkn/organisasi.png","name":"Organisasi","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"organisasi"},{"id":21,"src":"/icon-bkn/skp.png","name":"Kinerja","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"kinerja"},{"id":22,"src":"/icon-bkn/skp.png","name":"Kinerja Periodik","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"kinerjaPeriodik"},{"id":23,"src":"/icon-bkn-grey/kgb-grey.png","name":"KGB","isCheck":false,"isDisabled":true,"to":"instansi","dispatch":"kgb"},{"id":25,"src":"/icon-bkn/lhkpn.png","name":"LHKPN","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"lhkpn"},{"id":26,"src":"/icon-bkn/LHKASN.png","name":"LHKASN","isCheck":false,"isDisabled":true,"to":"instansi","dispatch":"lhkasn"},{"id":40,"src":"/icon-bkn/cpns-pns.png","name":"Tugas Belajar","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"tugasBelajar"},{"id":41,"src":"/icon-bkn/cpns-pns.png","name":"Pemberhentian Sementara","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"pemberhentianSementara"},{"id":42,"src":"/icon-bkn/diklat.png","name":"Sertifikasi","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"sertifikasi"},{"id":44,"src":"/icon-bkn/kgb.png","name":"Kenaikan Gaji Berkala","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"kgb"}],"allProcedure2":[{"id":0,"src":"/img/hijau-icon/02-PENDIDIKAN.png","name":"Pendidikan","isCheck":false,"isDisabled":false,"to":"bkn","dispatch":"pendidikan"},{"id":1,"src":"/img/hijau-icon/05-PROFESI.png","name":"Profesi","isCheck":false,"isDisabled":false,"to":"bkn","dispatch":"profesi"},{"id":2,"src":"/icon-bkn/jabatan.png","name":"Jabatan","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"jabatan"},{"id":3,"src":"/icon-bkn/diklat.png","name":"Diklat","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"diklat"},{"id":4,"src":"/icon-bkn/skp.png","name":"SKP","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"skp"}],"allProcedure3":[{"id":0,"src":"/img/hijau-icon/02-PENDIDIKAN.png","name":"Pendidikan","isCheck":false,"isDisabled":false,"to":"bkn","dispatch":"pendidikan"},{"id":1,"src":"/icon-bkn/data-pribadi.png","name":"Data Pribadi","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"dataPribadi"},{"id":2,"src":"/img/hijau-icon/20-ORGANISASI.png","name":"Unit Organisasi","isCheck":false,"isDisabled":false,"to":"bkn","dispatch":"unitOrganisasi"},{"id":3,"src":"/icon-bkn/diklat.png","name":"Diklat","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"diklat"},{"id":4,"src":"/icon-bkn/skp.png","name":"Kinerja","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"kinerja"},{"id":5,"src":"/icon-bkn/pasangan.png","name":"Pasangan","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"pasangan"},{"id":6,"src":"/icon-bkn/diklat.png","name":"Sertifikasi","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"sertifikasi"},{"id":7,"src":"/icon-bkn/anak.png","name":"Anak","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"anak"},{"id":8,"src":"/icon-bkn/penghargaan.png","name":"Penghargaan","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"penghargaan"},{"id":9,"src":"/icon-bkn/huk-disiplin.png","name":"Huk. Disiplin","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"hukDisiplin"},{"id":10,"src":"/icon-bkn/cpns-pns.png","name":"Kontrak","isCheck":false,"isDisabled":true,"to":"instansi","dispatch":"kontrak"},{"id":11,"src":"/icon-bkn/kgb.png","name":"Kenaikan Gaji Berkala","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"kgb"}],"allProcedure4":[{"id":0,"src":"/icon-bkn/data-pribadi.png","name":"Data Pribadi","isCheck":false,"isDisabled":false,"to":"instansi","dispatch":"dataPribadi"}]},"updateDokPI":{"data":{},"isLoading":false,"success":false},"viewInstansi":{"procedureDataUtama":[{"id":1,"src":"/img/hijau-icon/00-DATA PRIBADI.png","name":"Data Pribadi"},{"id":2,"src":"/img/hijau-icon/00-POSISI JABATN.png","name":"Posisi \u0026 Jabatan"},{"id":3,"src":"/img/hijau-icon/00-DATALAINNYA.png","name":"Data Lainnya"}],"prosedureName":""},"getDataNip":{"data":{},"isLoading":false,"dataName":{}},"getUsulanAsn":{"isLoading":true,"data":[],"err":""},"kp1":{"multivalue":{}},"getCardKP":{"nipAsn":{},"isLoading":false,"nameAsn":{}},"getDataPenetapanKP":{"isLoading":false,"data":[]},"getUsulanKP":{"isLoading":false,"data":[],"err":""},"getUsulanKJ":{"isLoading":false,"data":[],"err":""},"getTekenUsulKP":{"isLoading":false,"data":[],"err":"","detailTUKP":[]},"getIdAsn":{"nipAsn":{},"isLoading":false,"nameAsn":{},"isErr":false},"pemberhentian":{"multivalue":{}},"pengadaan":{"multivalue":{}},"pi1":{"multivalue":{}},"getBuatSK":{"isLoading":false,"data":[],"err":"","detailPembuatanSK_PI":[],"detailPembuatanSK_PI_LS":[],"judulDokSKPILS":[]},"getInboxSK":{"isLoading":false,"data":[],"err":""},"getinboxtekenSK":{"isLoading":false,"data":[],"err":""},"getinboxparafSK":{"isLoading":false,"data":[],"err":""},"getTekenUsulPI":{"isLoading":false,"data":[],"err":"","detailTUPI":[]},"getTekenSKPI":{"isLoading":false,"data":[],"err":"","detailTUPI":[]},"getparafSKPI":{"isLoading":false,"data":[],"err":"","detailTUPI":[]},"getPenetapanAsn":{"isLoading":false,"data":[]},"getPenetapanSkk":{"isLoading":false,"data":[]},"referensiPI":{"isLoading":false,"jenisPI":[],"err":""},"refrensiStatusUsul":{"isLoading":false,"dataStatus":[]},"referensiUsulan":{"dataGolongan":[],"dataKP":[]},"getCardMonitoringUsulan":{"nipAsn":{},"isLoading":false,"nameAsn":{}},"getDataRiwayatGolongan":{"data":{},"isLoading":false,"editGolongan":[]},"getDataRiwayatOrganisasi":{"data":{},"isLoading":false,"dataName":{}},"getDataRiwayatPendidikan":{"isLoading":false,"data":{}},"getDataRiwayatPmk":{"data":{},"isLoading":false,"dataName":{}},"getDataRiwayatProfesi":{"data":{},"isLoading":false,"dataName":{},"editProfesi":[]},"getDataRiwayatDiklat":{"data":{},"isLoading":false,"dataName":{}},"getDataRiwayatJabatan":{"data":{},"isLoading":false,"dataName":{},"editJabatan":[]},"getDataRiwayatPindahInstansi":{"data":{},"isLoading":false,"dataName":{},"editPInstansi":[]},"getDataRiwayatDataPribadiRiwayat":{"data":{},"isLoading":false,"dataName":{},"editDataPribadi":[]},"getDataRiwayatAngkaKredit":{"data":{},"isLoading":false,"dataName":{},"editAngkaKredit":[]},"getDataRiwayatHukDisiplin":{"isLoading":false,"data":{},"editHukuman":[]},"getDataRiwayatCltn":{"isLoading":false,"data":{}},"getDataRiwayatSkp":{"isLoading":false,"data":{}},"getDataRiwayatPenghargaan":{"isLoading":false,"data":{}},"getDataRiwayatLhkpn":{"isLoading":false,"data":{}},"getDataRiwayatKGB":{"data":{},"isLoading":false,"dataName":{}},"getDataRiwayatKepanitiaanTim":{"isLoading":false,"data":{}},"getDataRiwayatPrestasi":{"isLoading":false,"data":{}},"getDataRiwayatKeluarga":{"data":{},"isLoading":false,"dataName":{}},"getDataRiwayatPasangan":{"dataPasangan":{},"isLoading":false,"dataName":{},"editPasangan":[]},"getDataRiwayatOrangTua":{"dataOrangtua":{},"isLoading":false,"dataName":{},"editOrangtua":[]},"getDataRiwayatAnak":{"dataAnak":{},"isLoading":false,"dataName":{},"editAnak":[]},"getDataRiwayatCPNSPNS":{"data":{},"isLoading":false,"dataName":{},"editCpns":[]},"getDataRiwayatKedudukanHukum":{"data":{},"isLoading":false,"dataName":{}},"ReferensiProfile":{"isLoadingPegawai":false,"isLoadingRiwayat":false,"isLoadingJabatan":false,"isLoadingUnor":false,"isLoadingInstansi":false,"isLoadingSatuanKerja":false,"isLoadingPendidikan":false,"isLoadingProfesi":false,"isLoadingSearchJabatan":false,"isLoadingSearchLokasi":false,"isLoadingJabatanFungsional":false,"isLoadingLokasi":false,"isLoadingGapok":false,"isLoadingAgama":false,"isLoadingKanreg":false,"isLoadingEselon":false,"isLoadingGolongan":false,"isLoadingKPKN":false,"isLoadingKTUA":false,"isLoadingTaspen":false,"isLoadingJenisKP":false,"isSearchTingkatPendidikan":false,"jenisPegawai":[],"jenisRiwayat":[],"jenisJabatan":[],"unor":[],"instansi":[],"satuanKerja":[],"pendidikan":[],"profesi":[],"searchJabatan":[],"searchLokasi":[],"searchTingkatPendidikan":[],"jabatanFungsional":[],"getLokasi":[],"getMutasi":[],"getGapok":[],"getAgama":[],"getKanreg":[],"getEselon":[],"getGolongan":[],"getJenisKP":[],"getJabatanFungsional":[],"getKPKN":[],"getKTUA":[],"getTaspen":[]},"getPendidikan":{"isLoading1":false,"isLoading2":false,"isLoading3":false,"getPendidikan":[],"editPendidikan":[],"createPendidikan":[],"dokumenUpload1":{},"dokumenUpload2":{},"dokumenUpload3":{},"isCreateUsulan":false,"isUpdateUsulan":false,"verifikasiUsul":[],"validasi":{},"isMainLoading":false,"isError":false,"errorIs":null,"statusDok1":false,"statusDok2":false,"statusDok3":false},"getPmk":{"isLoading":false,"getPmk":[],"editPmk":[],"createPmk":[],"verifikasiUsul":[],"validasiUsul":{},"isMainLoading":false,"isLoading1":false,"isLoading2":false,"isLoading3":false,"isLoading4":false,"dokumenUpload1":{},"dokumenUpload2":{},"dokumenUpload3":{},"dokumenUpload4":{},"statusDok1":false,"statusDok2":false,"statusDok3":false,"statusDok4":false},"getSkp":{"isError":false,"errorIs":null,"isLoading":false,"getSkp":[],"editSkp":[],"createSkp":{},"dokumenUpload":{},"verifikasiUsul":[],"statusDok1":false,"isMainLoading":false},"getProfesi":{"isLoading":false,"isError":false,"errorIs":null,"isLoading1":false,"isLoading2":false,"isLoading3":false,"getProfesi":[],"editProfesi":[],"createProfesi":[],"dokumenUpload1":{},"dokumenUpload2":{},"dokumenUpload3":{},"verifikasiUsul":[],"validasiUsul":{},"isMainLoading":false},"getPotensi":{"isLoading":false,"getPotensi":[],"editPotensi":[],"createPotensi":[],"verifikasiUsul":[],"validasiUsul":{},"isMainLoading":false},"getPInstansi":{"isLoading":false,"isLoading1":false,"isLoading2":false,"isLoading3":false,"statusDok1":false,"statusDok2":false,"statusDok3":false,"dokumenUpload1":{},"dokumenUpload2":{},"dokumenUpload3":{},"getPInstansi":[],"editPInstansi":[]},"getDiklat":{"isLoading":false,"getDiklat":[],"editDiklat":[],"createKepanitiaan":[],"isError":false,"errorIs":null,"isLoading1":false,"createGolongan":{},"dokumenUpload1":{},"dokumenUpload2":{},"statusDok1":false,"verifikasiUsul":[],"validasiUsul":{},"isMainLoading":false},"getKeluarga":{"isLoading":false,"getKeluarga":[],"editKeluarga":[]},"getAngkaKredit":{"isError":false,"errorIs":null,"isLoading1":false,"isLoading2":false,"getAngkaKredit":[],"editAngkaKredit":[],"createAngkaKredit":{},"dokumenUpload1":{},"dokumenUpload2":{},"verifikasiUsul":[],"isMainLoading":false,"statusDok1":false,"statusDok2":false},"getOrganisasi":{"isLoading":false,"getOrganisasi":[],"editOrganisasi":[],"createOrganisasi":[],"dokumenUpload":{},"verifikasiUsul":null,"isMainLoading":false,"isError":false,"errorIs":null},"getKepanitiaan":{"isLoading":false,"getKepanitiaan":[],"editKepanitiaan":[],"createKepanitiaan":[]},"getPrestasi":{"isLoading":false,"getPrestasi":[],"editPrestasi":[]},"getDataPribadi":{"isLoading":false,"getDataPribadi":[],"editDataPribadi":[],"createKepanitiaan":[]},"getJabatan":{"isError":false,"errorIs":null,"isLoading1":false,"isLoading2":false,"getJabatan":[],"editJabatan":[],"createJabatan":{},"dokumenUpload1":{},"dokumenUpload2":{},"statusDok1":false,"statusDok2":false,"verifikasiUsul":[],"isMainLoading":false},"getHukuman":{"isLoading":false,"getHukuman":[],"editHukuman":[]},"getCltn":{"isLoading":false,"getCltn":[],"editCltn":[],"createCltn":[]},"getCpns":{"isLoading":false,"getCpns":[],"editCpns":[],"createCpns":[]},"getPenghargaan":{"isLoading":false,"getPenghargaan":[],"editPenghargaan":[],"createPenghargaan":[]},"getLhkpn":{"isLoading":false,"getLhkpn":[],"editLhkpn":[],"createLhkpn":[]},"getKGB":{"isLoading":false,"getKGB":[],"editKGB":[],"createKgb":[],"verifikasiUsul":[],"validasiUsul":{},"isMainLoading":false},"rolePermission":{"isLoading":false,"data":[],"err":""},"simpanUsul":{"isLoading":false,"usulPendidikanID":[],"usulGolonganID":[],"usulPindahInstansiID":[],"usulProfesiID":[],"usulOrganisasiID":[],"usulAngkaKreditID":[],"usulSkpID":[],"usulJabatanID":[],"usulDataPribadiID":[],"usulPmkID":[],"usulCltnID":[]},"getTekenUsulPemberhentian":{"isLoading":false,"data":[],"err":"","detailTUPemberhentian":[]},"getInboxTekenUsulPemberhentian":{"isLoading":false,"data":[],"err":""},"getInboxTekenSKPemberhentian":{"isLoading":false,"data":[],"err":""},"getInboxParafSKPemberhentian":{"isLoading":false,"data":[],"err":""},"referensiTekenUsulPemberhentian":{"isLoading":false,"jenisPemberhentian":[],"err":""},"getusulanPemberhentian":{"isLoading":false,"data":[],"err":""},"referensiUsulanPemberhentian":{"isLoading":false,"jenisPemberhentian":[],"err":""},"referensiPenetapanPemberhentian":{"isLoading":false,"jenisPemberhentian":[],"err":""},"getPenetapanPemberhentian":{"isLoading":false,"data":[],"err":""},"getBuatSKPemberhentian":{"isLoading":false,"data":[],"err":""},"getInboxBuatSKPemberhentian":{"isLoading":false,"data":[],"err":""},"getTekenSKPemberhentian":{"isLoading":false,"data":[],"err":""},"getParafSKPemberhentian":{"isLoading":false,"data":[],"err":""},"getCardPemberhentian":{"nipAsn":{},"isLoading":false,"nameAsn":{}},"getDataPenetapanPi":{"isLoading":false,"data":[],"err":""},"getDataUsulanPI":{"isLoading":false,"data":[],"err":""},"redTingkatPendidikan":{"isLoading":false,"tingkatPendidikan":[],"searchTingkatPendidikan":{}},"redOrganisasi":{"isLoading":false,"jenisOrganisasi":{},"kedudukanOrganisasi":{}},"createUpdateUsulan":{"isCreateUsulanPendidikan":false,"isUpdateUsulanPendidikan":false,"isCreateUsulanProfesi":false,"isUpdateUsulanProfesi":false,"isCreateUsulanOrganisasi":false,"isUpdateUsulanOrganisasi":false,"isCreateUsulanAngkaKredit":false,"isUpdateUsulanAngkaKredit":false,"isCreateUsulanSkp":false,"isUpdateUsulanSkp":false,"isCreateUsulanGolongan":false,"isUpdateUsulanGolongan":false,"isCreateUsulanJabatan":false,"isUpdateUsulanJabatan":false,"isCreateUsulanPmk":false,"isUpdateUsulanPmk":false,"isCreateUsulanDataPribadi":false,"isUpdateUsulanDataPribadi":false},"getJenisPI":{"data":{},"isLoading":false,"detail":{},"isLoadingDetail":false},"PostUsulanPI":{"data":{},"isLoading":false},"getNameFilePI":{"getDataNama":"","getDataNama2":"","getDataNama3":"","getDataNama4":"","getDataNama5":"","getDataNama6":"","getDataNama7":"","getDataNama8":"","getDataNama9":"","getDataNama10":"","getDataNama11":"","getDataNama12":"","getDataNama13":"","getDataNama14":""},"getGolonganPI":{"dataGolongan":{},"isLoading":false},"redJenisJabatan":{"isLoading":false,"jenisJabatan":{}},"getGolongan":{"isLoading":false,"isError":false,"errorIs":null,"isLoading1":false,"isLoading2":false,"getGolongan":[],"editGolongan":[],"createGolongan":{},"dokumenUpload1":{},"dokumenUpload2":{},"statusDok1":false,"statusDok2":false,"verifikasiUsul":[],"validasiUsul":{},"isMainLoading":false},"getTekenUsulPeremajaan":{"isLoading":false,"data":[],"err":"","detailTUPeremajaan":[]},"getInboxTekenUsulPeremajaan":{"isLoading":false,"data":[],"err":""},"tableForecast":{"isLoading":false,"data":[],"err":""},"referensiTekenUsulPeremajaan":{"isLoading":false,"jenisPeremajaan":[],"err":""},"referensiInboxTekenUsulPeremajaan":{"isLoading":false,"jenisPeremajaan":[],"err":""},"tolakReferensiTekenUsulPeremajaan":{"isLoading":false,"jenisTolak":[],"err":""},"refDokumen":{"dokumen":[],"isLoading":false},"allRefStatePI":{"isLoadingRiwayat":false,"jenisRiwayatPI":[],"isLoading":false,"jenisPI":[],"err":""},"referensiTekenUsulPI":{"isLoading":false,"jenisPindahInstansi":[],"err":""},"tolakReferensiTekenUsulPI":{"isLoading":false,"jenisTolakPI":[],"err":""},"getInboxTekenUsulPI":{"isLoading":false,"data":[],"err":""},"referensiInboxTekenUsulPI":{"isLoading":false,"jenisPindahInstansi":[],"err":""},"postTolakTekenUsul":{"isLoading":false,"alasanTolak":[],"err":""},"putTolakTekenUsulPI":{"isLoading":false,"alasanTolak":[],"err":""},"getViewIdASN":{"nipAsn":{},"isLoading":false,"nameAsn":{},"isErr":false,"fileURL":""},"getViewJPTNonAsnId":{"detailJptNonAsn":{},"isLoading":false,"detailOrangJPTNonASN":{},"isErr":false,"fileURL":""},"getDataRiwayatGelarDepan":{"dataGelar":{},"isLoading":false,"editAnak":[]},"getInboxTekenUsulKP":{"isLoading":false,"data":[],"err":""},"referensiInboxTekenUsulKP":{"isLoading":false,"jenisKP":[],"err":""},"getInboxTekenSKKP":{"isLoading":false,"data":[],"err":"","detailSKKP":[]},"allRefStateKP":{"isLoadingRiwayat":false,"jenisRiwayatKP":[],"isLoading":false,"jenisKP":[],"jenisKJ":[],"isLoadingDokumenTUKP":[],"refDokumenTUKP":[],"err":""},"allRefDokumenTUKP":{"isLoadingRiwayat":false,"jenisRiwayatKP":[],"isLoading":false,"jenisKP":[],"jenisKJ":[],"isLoadingDokumenTUKP":[],"refDokumenTUKP":[],"err":""},"referensiJenisKP":{"isLoadingRiwayat":false,"jenisRiwayatKP":[],"isLoading":false,"jenisKP":[],"jenisKJ":[],"isLoadingDokumenTUKP":[],"refDokumenTUKP":[],"err":""},"referensiJenisKJ":{"isLoadingRiwayat":false,"jenisRiwayatKP":[],"isLoading":false,"jenisKP":[],"jenisKJ":[],"isLoadingDokumenTUKP":[],"refDokumenTUKP":[],"err":""},"tolakReferensiTekenUsulKP":{"isLoading":false,"jenisTolakKP":[],"err":""},"postTolakTekenUsulKP":{"isLoading":false,"alasanTolak":[],"err":""},"referensiUsulanPI":{"isLoading":false,"jenisPI":[],"err":""},"postSetujuTekenUsulKP":{"isLoading":false,"disetuji":[],"err":""},"getDataKenaikanPangkat":{"isLoading":false,"getDataKP":[],"err":""},"namaAsnKP":{"isLoading":false,"namaAsnKP":[],"err":""},"nipAsnKP":{"isLoading":false,"nipAsnKP":[],"err":""},"getDataUsulanKP":{"isLoading":false,"dataKenaikanPangkat":[],"err":""},"postGenerateNomorSKPI":{"isLoading":false,"nomorSKPI":[],"nomorSKPI_LS":[],"err":""},"getCardSKK":{"nipAsn":{},"isLoading":false,"nameAsn":{}},"getDataPenetapanSKK":{"isLoading":false,"data":[],"err":""},"getDataUsulanSKK":{"isLoading":false,"data":[],"err":""},"getTekenUsulSKK":{"isLoading":false,"data":[],"err":"","detailTUPI":[]},"skk":{"multivalue":{}},"perbaikanUsulanPIReducer":{"isLoading":false,"data":{},"err":"","isSuccess":false}}},"page":"/tampilanData/pppk","query":{},"buildId":"VbhDKvCxVoUvqfXaI94XY","isFallback":false,"appGip":true}</script>
+    <script nomodule="" src="/_next/static/chunks/polyfills-a98333a5dc6a3a91e1d0.js"></script>
+    <script src="/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js" async=""></script>
+    <script src="/_next/static/chunks/framework.b319283d2a0b3303667f.js" async=""></script>
+    <script src="/_next/static/chunks/b7348cd0933554f3d43abb82208d2125ebd2cb6a.1c91d7949993a384c293.js"
+        async=""></script>
+    <script src="/_next/static/chunks/bcba553eff99e9862de6fac292dd56851c5556ef.098d15633988e039153b.js"
+        async=""></script>
+    <script src="/_next/static/chunks/main-ad8c6d538c00742332e0.js" async=""></script>
+    <script src="/_next/static/chunks/eab32846.3be15b012f90100dd0e3.js" async=""></script>
+    <script src="/_next/static/chunks/588782d1df8dbced581de60b3c665f705a7acb31.befec5643797be3b7f68.js"
+        async=""></script>
+    <script src="/_next/static/chunks/b18b5b11f899446619a4d68a7caa1d3026c71a31.b00b681a59330e7a235e.js"
+        async=""></script>
+    <script src="/_next/static/chunks/72cb453b979c3369de2d6b18eeef3d10e45c19d2.b119905d1171cf069079.js"
+        async=""></script>
+    <script src="/_next/static/chunks/ad39096d51547e830ab1e6f081c66c0b8cb5b425.c9ca6439adf17d802de9.js"
+        async=""></script>
+    <script src="/_next/static/chunks/a344e210fd4ebb5044581d9b08d0230adc8bfa08_CSS.fabd4e159e3137462207.js"
+        async=""></script>
+    <script src="/_next/static/chunks/cc615257fc7912fe706c72f2ef74e45bc8fc1d0e_CSS.cd5f7656c0fb467bb4ae.js"
+        async=""></script>
+    <script src="/_next/static/chunks/pages/_app-9f0d3caf3e3bb957d72e.js" async=""></script>
+    <script src="/_next/static/chunks/75fc9c18.20d73e8e6f6570e1f8d9.js" async=""></script>
+    <script src="/_next/static/chunks/0c428ae2.e9767b70b930e222c97a.js" async=""></script>
+    <script src="/_next/static/chunks/ebea6a39e06ff245928418052421ca2d016d83e4.9980768314a64e1dc58b.js"
+        async=""></script>
+    <script src="/_next/static/chunks/ce80bd700df339d28917896b276ea2214f0ac5a0.431c78f568ab2adda017.js"
+        async=""></script>
+    <script src="/_next/static/chunks/4fc99b0d19b30769f51f2d239e44668ec45326dd.372ef86fcd9398f51734.js"
+        async=""></script>
+    <script src="/_next/static/chunks/b3c96598bc20b7891514352330600d14e1e55048.54127280ba7af33fd4fc.js"
+        async=""></script>
+    <script src="/_next/static/chunks/e5fe75451452033677d2497f44f1195174d73f33.0b72a058bf59dbfd9ddd.js"
+        async=""></script>
+    <script src="/_next/static/chunks/4594816ea0fb71a34d0acd8f0241beed480603ba.e3e3c79cdc3092c3e9d3.js"
+        async=""></script>
+    <script src="/_next/static/chunks/f747284a712a3f3ad31c9eaf30459959201972fe.db27c724a63efc6042d5.js"
+        async=""></script>
+    <script src="/_next/static/chunks/6648cb3e3317ed22949d0d3fa30249527a22bccb.4a99dd71b8678e0dab7f.js"
+        async=""></script>
+    <script src="/_next/static/chunks/3d64d9a3a8a60b51d072dba083c81c8cd08fe42c.e1591fabaf2b59e0d907.js"
+        async=""></script>
+    <script src="/_next/static/chunks/bb437ea8dc12f0d421a435ae6163af471b616991.5d43853bace90c8ad2dc.js"
+        async=""></script>
+    <script src="/_next/static/chunks/pages/tampilanData/pppk-f278c0bf8672d043be69.js" async=""></script>
+    <script src="/_next/static/VbhDKvCxVoUvqfXaI94XY/_buildManifest.js" async=""></script>
+    <script src="/_next/static/VbhDKvCxVoUvqfXaI94XY/_ssgManifest.js" async=""></script><next-route-announcer>
+        <p aria-live="assertive" id="__next-route-announcer__" role="alert"
+            style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; overflow-wrap: normal;">
+            SI-ASN INSTANSI</p>
+    </next-route-announcer>
+    <script src="/_next/static/chunks/1bfc9850.446cb20028e7e1b5fbbd.js"></script>
+    <script src="/_next/static/chunks/f864e7355bd23f7e17bde8525c2f98007c4709ac.b2ae59c3b89db9cf5600.js"></script>
+    <script src="/_next/static/chunks/c5d58b7ca61ef9838b81cd6891e57fda5b07ef16.28cbd1ee58d4c9ecc54b.js"></script>
+    <script src="/_next/static/chunks/pages/tampilanData-54129ddb4944dbf5907f.js"></script>
+    <script src="/_next/static/chunks/pages/index-d49da5c1f0c73f49a5bc.js"></script>
+    <script src="/_next/static/chunks/6728d85a.a06e5d226b0df7769ece.js"></script>
+    <script src="/_next/static/chunks/7c9be97bd23cd4fc04a7303312f2245d90d52ba3.789a84e22d76a2fdc5a5.js"></script>
+    <script src="/_next/static/chunks/a13408b5e70f7b0956322030031745c32cdddba4.bea897199fd820d2bf4d.js"></script>
+    <script src="/_next/static/chunks/02943e9e1c0265f13281228d1afdeebf5a903e3e.f5e83e7228ddc36f72ac.js"></script>
+    <script src="/_next/static/chunks/0fc971a93b7fed0ed378c86184410cc3e2fbfcbe.4e090442ba5dbd71dea9.js"></script>
+    <script src="/_next/static/chunks/729d38e71ed568cd581fb7b05b86c524bfe22f06.f89090c7f8521fe03a46.js"></script>
+    <script src="/_next/static/chunks/39a9b1dad1e0b9d7dc0750df01ce03e65f359c35.453b6f456168bb1dd568.js"></script>
+    <script src="/_next/static/chunks/32cf06d4a1d046b59f4e4114697db851bef80fad.0e0c171664669e82354c.js"></script>
+    <script src="/_next/static/chunks/86e1c1fbf558fdc3c61a28c7e3ac30cd463cff98.fcf3dd0dc79592760674.js"></script>
+    <script src="/_next/static/chunks/pages/tampilanData/pns-94b131d2902f22d6eca6.js"></script>
+    <script src="/_next/static/chunks/8ebf087db093308720ee5921399ee4d636025534.16fe9468a9b80a91679e.js"></script>
+    <script src="/_next/static/chunks/pages/tampilanData/JPTNonASN-e4d3bc06b3d4bd1c62b6.js"></script>
+    <div>
+        <div class="ant-notification ant-notification-topRight" style="right: 0px; top: 24px; bottom: auto;">
+            <div></div>
+        </div>
+    </div>
+</body>
+
+</html>
